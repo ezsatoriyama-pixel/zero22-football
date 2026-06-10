@@ -1,137 +1,81 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth';
-import toast from 'react-hot-toast';
 
 export default function LoginPage() {
-  const router = useRouter();
-  const { login, register } = useAuth();
+  const { login } = useAuth();
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState('');
   const [isRegister, setIsRegister] = useState(false);
 
-  const resetForm = (nextRegister: boolean) => {
-    setIsRegister(nextRegister);
-    setPhone('');
-    setPassword('');
-    setConfirmPassword('');
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
     if (!phone || !password) {
-      toast.error('请填写手机号和密码');
+      setError('请填写完整信息');
       return;
     }
-    if (!/^1[3-9]\d{9}$/.test(phone)) {
-      toast.error('请输入正确的手机号');
-      return;
-    }
-    if (password.length < 4) {
-      toast.error('密码至少4位');
-      return;
-    }
-
-    if (isRegister) {
-      if (password !== confirmPassword) {
-        toast.error('两次输入密码不一致');
-        return;
-      }
-      const result = register(phone, password);
-      if (result.ok) {
-        toast.success(result.message);
-        router.push('/');
-      } else {
-        toast.error(result.message);
-      }
-    } else {
-      const result = login(phone, password);
-      if (result.ok) {
-        toast.success(result.message);
-        router.push('/');
-      } else {
-        toast.error(result.message);
-      }
+    const success = await login(phone, password);
+    if (!success) {
+      setError(isRegister ? '注册失败，请重试' : '手机号或密码错误');
     }
   };
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center px-4 md:px-6">
-      <div className="bg-white rounded-card p-6 md:p-8 shadow-card w-full max-w-sm animate-fade-in">
-        <div className="text-center mb-6 md:mb-8">
-          <div className="text-2xl md:text-3xl mb-3">⚽</div>
-          <h2 className="text-lg md:text-xl font-bold text-text-primary">
-            {isRegister ? '注册 Zero22' : '登录 Zero22'}
-          </h2>
-          <p className="text-sm text-text-tertiary mt-1">
-            {isRegister ? '创建账号，开启智能预测' : '欢迎回来，继续你的足球分析'}
-          </p>
-        </div>
+    <div className="text-center pt-28 pb-24 px-6">
+      <div className="max-w-md mx-auto bg-white p-8 rounded-card shadow-card">
+        <h1 className="text-[48px] font-bold text-text-primary tracking-tight leading-[0.95]">
+          {isRegister ? '创建账号' : '登录'}
+        </h1>
+        <p className="mt-4 text-lg text-text-secondary">
+          {isRegister ? '使用手机号注册新账号' : '登录以解锁完整功能'}
+        </p>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
           <div>
-            <label className="block text-sm font-medium text-text-secondary mb-1.5">手机号</label>
+            <label className="block text-base text-text-tertiary mb-2 text-left">手机号</label>
             <input
               type="tel"
               value={phone}
-              onChange={(e) => setPhone(e.target.value.replace(/\D/g, '').slice(0, 11))}
+              onChange={(e) => setPhone(e.target.value)}
+              className="w-full p-4 bg-gray-50 rounded-xl border border-border-light text-base text-text-primary focus:outline-none focus:border-accent"
               placeholder="请输入手机号"
-              className="w-full px-4 py-3 rounded-xl border border-border-light bg-bg text-text-primary placeholder:text-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all text-sm"
             />
           </div>
-
           <div>
-            <label className="block text-sm font-medium text-text-secondary mb-1.5">密码</label>
+            <label className="block text-base text-text-tertiary mb-2 text-left">密码</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className="w-full p-4 bg-gray-50 rounded-xl border border-border-light text-base text-text-primary focus:outline-none focus:border-accent"
               placeholder="请输入密码"
-              className="w-full px-4 py-3 rounded-xl border border-border-light bg-bg text-text-primary placeholder:text-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all text-sm"
             />
           </div>
 
-          {isRegister && (
-            <div>
-              <label className="block text-sm font-medium text-text-secondary mb-1.5">确认密码</label>
-              <input
-                type="password"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                placeholder="请再次输入密码"
-                className="w-full px-4 py-3 rounded-xl border border-border-light bg-bg text-text-primary placeholder:text-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all text-sm"
-              />
-            </div>
+          {error && (
+            <div className="text-red-500 text-base font-medium text-left">{error}</div>
           )}
 
           <button
             type="submit"
-            className="w-full bg-accent text-white font-semibold py-3 rounded-full hover:bg-accent-hover transition-colors btn-press mt-2"
+            className="w-full bg-accent text-white text-lg font-bold px-10 py-4 rounded-full hover:bg-accent-hover transition-colors btn-press"
           >
             {isRegister ? '注册' : '登录'}
           </button>
         </form>
 
-        <p className="text-sm text-center mt-5 text-text-secondary">
+        <div className="mt-6 text-base text-text-secondary">
           {isRegister ? '已有账号？' : '没有账号？'}
           <button
-            type="button"
-            onClick={() => resetForm(!isRegister)}
-            className="text-accent font-medium hover:underline ml-1"
+            onClick={() => setIsRegister(!isRegister)}
+            className="text-accent font-bold ml-2 hover:underline"
           >
-            {isRegister ? '去登录' : '去注册'}
+            {isRegister ? '立即登录' : '立即注册'}
           </button>
-        </p>
-
-        <p className="text-xs text-text-tertiary text-center mt-4">
-          登录即表示同意
-          <a href="#" className="text-accent hover:underline"> 服务条款 </a>
-          和
-          <a href="#" className="text-accent hover:underline"> 隐私政策</a>
-        </p>
+        </div>
       </div>
     </div>
   );

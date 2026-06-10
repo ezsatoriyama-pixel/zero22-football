@@ -1,15 +1,20 @@
+'use client';
+
+import Link from 'next/link';
+
 export default function Footer() {
   return (
-    <footer className="border-t border-border-light mt-12 md:mt-20">
-      <div className="max-w-page mx-auto px-4 md:px-6 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-        <span className="text-xs md:text-sm text-text-tertiary">
-          © 2026 Zero22 AI Football Lab. 数据仅供参考。
-        </span>
-        <div className="flex gap-4 md:gap-6 text-xs md:text-sm text-text-tertiary">
-          <a href="/admin" className="hover:text-text-primary transition-colors opacity-40">⚙</a>
-          <a href="#" className="hover:text-text-primary transition-colors">关于我们</a>
-          <a href="#" className="hover:text-text-primary transition-colors">隐私政策</a>
-          <a href="#" className="hover:text-text-primary transition-colors">使用条款</a>
+    <footer className="bg-bg py-20 border-t border-border-light">
+      <div className="max-w-page mx-auto px-6 text-center">
+        <p className="text-2xl font-bold text-text-primary tracking-tight">
+          Zero22 AI Football Lab
+        </p>
+        <p className="mt-6 text-base text-text-tertiary">
+          © 2026 Zero22 AI Football Lab. All rights reserved.
+        </p>
+        <div className="mt-6 flex justify-center gap-8 text-base text-text-secondary">
+          <Link href="/admin" className="hover:text-accent">管理后台</Link>
+          <a href="https://github.com/ezsatoriyama-pixel/zero22-football" target="_blank" rel="noopener noreferrer" className="hover:text-accent">GitHub</a>
         </div>
       </div>
     </footer>
