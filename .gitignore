@@ -1,0 +1,7 @@
+.vercel
+.next/  
+out/  
+node_modules/ 
+_api_backup/ 
+screenshots/ 
+data/ 
