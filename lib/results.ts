@@ -44,13 +44,9 @@ const STATIC_RESULTS_URL = `${BASE_PATH}/data/results.json`;
 // Hardwired match results - persisted in code for guaranteed display
 const HARDWIRED_RESULTS: ResultMap = {
   'wc-a1-01': { matchId: 'wc-a1-01', actualScore: '2:0', updatedAt: '2026-06-13T17:08:51Z' },
-  'wc-a1-02': { matchId: 'wc-a1-02', actualScore: '1:1', updatedAt: '2026-06-14T00:00:00Z' },
+  'wc-a1-02': { matchId: 'wc-a1-02', actualScore: '2:1', updatedAt: '2026-06-14T00:00:00Z' },
   'wc-b1-01': { matchId: 'wc-b1-01', actualScore: '1:1', updatedAt: '2026-06-14T00:00:00Z' },
-  'wc-d1-01': { matchId: 'wc-d1-01', actualScore: '1:0', updatedAt: '2026-06-14T00:00:00Z' },
-  'wc-b1-02': { matchId: 'wc-b1-02', actualScore: '0:2', updatedAt: '2026-06-14T00:00:00Z' },
-  'wc-c1-01': { matchId: 'wc-c1-01', actualScore: '0:2', updatedAt: '2026-06-14T00:00:00Z' },
-  'wc-c1-02': { matchId: 'wc-c1-02', actualScore: '2:0', updatedAt: '2026-06-14T00:00:00Z' },
-  'wc-d1-02': { matchId: 'wc-d1-02', actualScore: '0:1', updatedAt: '2026-06-14T00:00:00Z' },
+  'wc-d1-01': { matchId: 'wc-d1-01', actualScore: '4:1', updatedAt: '2026-06-14T00:00:00Z' },
 };
 
 function normalizeScore(score?: string | null): string | null {

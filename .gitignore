@@ -4,7 +4,9 @@ out/
 node_modules/ 
 _api_backup/ 
 screenshots/ 
-data/ 
+/data/
+!public/data/results.json
+!public/data/results.json
 "_tmp_gh_deploy/"  
 out  
 .next  

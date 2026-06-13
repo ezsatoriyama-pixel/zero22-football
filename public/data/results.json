@@ -1,0 +1,24 @@
+{
+  "results": {
+    "wc-a1-01": {
+      "matchId": "wc-a1-01",
+      "actualScore": "2:0",
+      "updatedAt": "2026-06-13T17:08:51Z"
+    },
+    "wc-a1-02": {
+      "matchId": "wc-a1-02",
+      "actualScore": "2:1",
+      "updatedAt": "2026-06-14T00:00:00Z"
+    },
+    "wc-b1-01": {
+      "matchId": "wc-b1-01",
+      "actualScore": "1:1",
+      "updatedAt": "2026-06-14T00:00:00Z"
+    },
+    "wc-d1-01": {
+      "matchId": "wc-d1-01",
+      "actualScore": "4:1",
+      "updatedAt": "2026-06-14T00:00:00Z"
+    }
+  }
+}
