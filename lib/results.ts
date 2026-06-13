@@ -49,6 +49,13 @@ const HARDWIRED_RESULTS: ResultMap = {
   'wc-d1-01': { matchId: 'wc-d1-01', actualScore: '4:1', updatedAt: '2026-06-14T00:00:00Z' },
 };
 
+const BLOCKED_RESULT_IDS = new Set([
+  'wc-b1-02',
+  'wc-c1-01',
+  'wc-c1-02',
+  'wc-d1-02',
+]);
+
 function normalizeScore(score?: string | null): string | null {
   if (!score) return null;
   const match = score.trim().replace('：', ':').match(/^(\d+)\s*:\s*(\d+)$/);
@@ -135,17 +142,23 @@ function normalizeResultPayload(payload: unknown): ResultMap {
   }, {});
 }
 
+function sanitizeResults(results: ResultMap): ResultMap {
+  return Object.entries(results).reduce<ResultMap>((map, [matchId, result]) => {
+    if (!BLOCKED_RESULT_IDS.has(matchId)) map[matchId] = result;
+    return map;
+  }, {});
+}
+
 export async function loadResultSnapshot(): Promise<ResultSnapshot> {
-  // 以硬编码赛果为基础，远程/静态数据覆盖补充新赛果
   const base = { ...HARDWIRED_RESULTS };
 
   try {
-    const remote = await requestRemote();
-    return { results: { ...base, ...remote }, source: 'remote' };
+    const remote = sanitizeResults(await requestRemote());
+    return { results: { ...remote, ...base }, source: 'remote' };
   } catch {
     try {
-      const staticResults = await requestStaticResults();
-      return { results: { ...base, ...staticResults }, source: 'static' };
+      const staticResults = sanitizeResults(await requestStaticResults());
+      return { results: { ...staticResults, ...base }, source: 'static' };
     } catch {
       return { results: base, source: 'static' };
     }

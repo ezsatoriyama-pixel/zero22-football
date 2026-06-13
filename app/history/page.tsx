@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import { worldCupMatches } from '@/lib/mockData';
 import { buildHistoryRecords, loadResultSnapshot, percentage, type HistoryStatRecord, type ResultSource } from '@/lib/results';
 
+const confirmedResultIds = new Set(['wc-a1-01', 'wc-a1-02', 'wc-b1-01', 'wc-d1-01']);
+
 export default function HistoryPage() {
   const [records, setRecords] = useState<HistoryStatRecord[]>([]);
   const [source, setSource] = useState<ResultSource>('static');
@@ -15,7 +17,10 @@ export default function HistoryPage() {
 
     loadResultSnapshot().then((snapshot) => {
       if (!mounted) return;
-      setRecords(buildHistoryRecords(worldCupMatches, snapshot.results));
+      const confirmedResults = Object.fromEntries(
+        Object.entries(snapshot.results).filter(([matchId]) => confirmedResultIds.has(matchId)),
+      );
+      setRecords(buildHistoryRecords(worldCupMatches, confirmedResults));
       setSource(snapshot.source);
       setLoading(false);
     });
