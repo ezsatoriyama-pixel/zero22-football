@@ -49,12 +49,7 @@ const HARDWIRED_RESULTS: ResultMap = {
   'wc-d1-01': { matchId: 'wc-d1-01', actualScore: '4:1', updatedAt: '2026-06-14T00:00:00Z' },
 };
 
-const BLOCKED_RESULT_IDS = new Set([
-  'wc-b1-02',
-  'wc-c1-01',
-  'wc-c1-02',
-  'wc-d1-02',
-]);
+export const CONFIRMED_RESULT_IDS = new Set(Object.keys(HARDWIRED_RESULTS));
 
 function normalizeScore(score?: string | null): string | null {
   if (!score) return null;
@@ -144,7 +139,7 @@ function normalizeResultPayload(payload: unknown): ResultMap {
 
 function sanitizeResults(results: ResultMap): ResultMap {
   return Object.entries(results).reduce<ResultMap>((map, [matchId, result]) => {
-    if (!BLOCKED_RESULT_IDS.has(matchId)) map[matchId] = result;
+    if (CONFIRMED_RESULT_IDS.has(matchId)) map[matchId] = result;
     return map;
   }, {});
 }
