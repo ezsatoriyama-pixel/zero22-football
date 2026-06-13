@@ -2402,3 +2402,6 @@ Import trace for requested module:
  GET /_next/static/chunks/main-app.js?v=1781372503647 404 in 537ms
  GET /_next/static/chunks/app-pages-internals.js 404 in 536ms
  GET /_next/static/chunks/app/history/page.js 404 in 536ms
+ ✓ Compiled in 573ms (795 modules)
+ ✓ Compiled in 601ms (781 modules)
+ ✓ Compiled in 378ms (781 modules)
