@@ -43,7 +43,7 @@ export default function Header() {
               {isPro && (
                 <span className="text-sm font-bold text-pro-gold bg-pro-bg px-4 py-1.5 rounded-full">PRO</span>
               )}
-              <span className="text-base text-text-secondary hidden sm:inline">
+              <span className="text-base text-text-secondary">
                 {user?.maskedPhone || user?.phone}
               </span>
               <button

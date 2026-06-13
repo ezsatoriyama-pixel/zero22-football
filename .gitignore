@@ -5,3 +5,6 @@ node_modules/
 _api_backup/ 
 screenshots/ 
 data/ 
+"_tmp_gh_deploy/"  
+out  
+.next  

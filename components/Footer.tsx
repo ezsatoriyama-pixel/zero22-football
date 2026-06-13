@@ -13,6 +13,8 @@ export default function Footer() {
           © 2026 Zero22 AI Football Lab. All rights reserved.
         </p>
         <div className="mt-6 flex justify-center gap-8 text-base text-text-secondary">
+          <Link href="/disclaimer" className="hover:text-accent">免责声明</Link>
+          <Link href="/pro-terms" className="hover:text-accent">Pro 会员条款</Link>
           <Link href="/admin" className="hover:text-accent">管理后台</Link>
           <a href="https://github.com/ezsatoriyama-pixel/zero22-football" target="_blank" rel="noopener noreferrer" className="hover:text-accent">GitHub</a>
         </div>

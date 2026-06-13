@@ -1,10 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth';
 
 export default function LoginPage() {
-  const { login } = useAuth();
+  const router = useRouter();
+  const { login, register } = useAuth();
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -13,13 +15,33 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-    if (!phone || !password) {
-      setError('请填写完整信息');
+
+    // Phone validation
+    if (!/^1[3-9]\d{9}$/.test(phone)) {
+      setError('请输入正确的 11 位手机号');
       return;
     }
-    const success = await login(phone, password);
-    if (!success) {
-      setError(isRegister ? '注册失败，请重试' : '手机号或密码错误');
+
+    // Password validation
+    if (password.length < 4) {
+      setError('密码至少 4 位');
+      return;
+    }
+
+    if (isRegister) {
+      const result = await register(phone, password);
+      if (!result.ok) {
+        setError(result.message);
+      } else {
+        router.push('/');
+      }
+    } else {
+      const result = await login(phone, password);
+      if (!result.ok) {
+        setError(result.message);
+      } else {
+        router.push('/');
+      }
     }
   };
 
@@ -39,9 +61,9 @@ export default function LoginPage() {
             <input
               type="tel"
               value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              onChange={(e) => setPhone(e.target.value.replace(/\D/g, '').slice(0, 11))}
               className="w-full p-4 bg-gray-50 rounded-xl border border-border-light text-base text-text-primary focus:outline-none focus:border-accent"
-              placeholder="请输入手机号"
+              placeholder="请输入 11 位手机号"
             />
           </div>
           <div>
@@ -51,7 +73,7 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full p-4 bg-gray-50 rounded-xl border border-border-light text-base text-text-primary focus:outline-none focus:border-accent"
-              placeholder="请输入密码"
+              placeholder="请输入密码（至少 4 位）"
             />
           </div>
 
@@ -70,7 +92,7 @@ export default function LoginPage() {
         <div className="mt-6 text-base text-text-secondary">
           {isRegister ? '已有账号？' : '没有账号？'}
           <button
-            onClick={() => setIsRegister(!isRegister)}
+            onClick={() => { setIsRegister(!isRegister); setError(''); }}
             className="text-accent font-bold ml-2 hover:underline"
           >
             {isRegister ? '立即登录' : '立即注册'}

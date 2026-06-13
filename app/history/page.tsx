@@ -1,53 +1,146 @@
 'use client';
 
 import Link from 'next/link';
-import { historyRecords } from '@/lib/mockData';
+import { useEffect, useState } from 'react';
+import { worldCupMatches } from '@/lib/mockData';
+import { buildHistoryRecords, loadResultSnapshot, percentage, type HistoryStatRecord, type ResultSource } from '@/lib/results';
 
 export default function HistoryPage() {
+  const [records, setRecords] = useState<HistoryStatRecord[]>([]);
+  const [source, setSource] = useState<ResultSource>('static');
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let mounted = true;
+
+    loadResultSnapshot().then((snapshot) => {
+      if (!mounted) return;
+      setRecords(buildHistoryRecords(worldCupMatches, snapshot.results));
+      setSource(snapshot.source);
+      setLoading(false);
+    });
+
+    return () => { mounted = false; };
+  }, []);
+
+  const total = records.length;
+  const exact = records.filter((m) => m.isExact).length;
+  const top5 = records.filter((m) => m.isTop5).length;
+  const outcome = records.filter((m) => m.isOutcomeCorrect).length;
+
   return (
     <div>
-      <section className="text-center pt-28 pb-24 px-6">
+      <section className="text-center pt-28 pb-20 px-6">
         <div className="max-w-page mx-auto">
           <h1 className="text-[76px] font-bold text-text-primary tracking-tight leading-[0.95]">
             历史战绩
           </h1>
           <p className="mt-7 text-2xl text-text-secondary max-w-3xl mx-auto leading-snug">
-            回顾过去 30 天的 AI 预测战绩
+            只记录已完赛并录入真实比分的比赛，自动统计主推、TOP5 与胜平负方向
           </p>
         </div>
       </section>
 
       <section className="max-w-page mx-auto px-6 pb-24">
-        <div className="bg-white rounded-card p-6 shadow-card">
-          <table className="w-full text-left">
-            <thead>
-              <tr className="text-base text-text-tertiary border-b border-border-light">
-                <th className="p-4">比赛</th>
-                <th className="p-4">预测</th>
-                <th className="p-4">结果</th>
-                <th className="p-4">判定</th>
-              </tr>
-            </thead>
-            <tbody>
-              {historyRecords.map((m, i) => (
-                <tr key={i} className="text-base text-text-primary border-b border-border-light hover:bg-gray-50">
-                  <td className="p-4">
-                    <div>{m.match}</div>
-                    <div className="text-sm text-text-tertiary mt-1">{m.date}</div>
-                  </td>
-                  <td className="p-4">{m.predictedScore}</td>
-                  <td className="p-4">{m.actualScore}</td>
-                  <td className="p-4">
-                    <span className={`px-3 py-1 rounded-full text-sm font-bold ${m.isCorrect ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600'}`}>
-                      {m.isCorrect ? '命中' : '未中'}
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mb-6">
+          <div className="bg-white rounded-2xl p-6 shadow-card">
+            <div className="text-3xl font-bold text-text-primary">{total}</div>
+            <div className="text-base text-text-tertiary mt-2">已录入赛果</div>
+          </div>
+          <div className="bg-white rounded-2xl p-6 shadow-card">
+            <div className="text-3xl font-bold text-text-primary">{percentage(exact, total)}</div>
+            <div className="text-base text-text-tertiary mt-2">主推比分命中</div>
+          </div>
+          <div className="bg-white rounded-2xl p-6 shadow-card">
+            <div className="text-3xl font-bold text-text-primary">{percentage(top5, total)}</div>
+            <div className="text-base text-text-tertiary mt-2">TOP5 覆盖</div>
+          </div>
+          <div className="bg-white rounded-2xl p-6 shadow-card">
+            <div className="text-3xl font-bold text-text-primary">{percentage(outcome, total)}</div>
+            <div className="text-base text-text-tertiary mt-2">胜平负方向</div>
+          </div>
         </div>
+
+        <div className="bg-white rounded-card p-6 shadow-card">
+          {loading ? (
+            <div className="text-center py-16">
+              <div className="text-2xl font-bold text-text-primary mb-3">正在读取赛果...</div>
+              <p className="text-lg text-text-secondary">稍等一下，正在同步最新录入结果。</p>
+            </div>
+          ) : records.length === 0 ? (
+            <div className="text-center py-16">
+              <div className="text-6xl mb-6">⚽</div>
+              <h3 className="text-2xl font-bold text-text-primary mb-3">
+                暂无已确认历史战绩
+              </h3>
+              <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
+                这里不会再显示假的“中 / 不中”。进入管理后台录入实际比分后，本页会自动计算命中率。
+              </p>
+              <p className="text-base text-text-tertiary mt-4">
+                首场比赛：墨西哥 vs 南非<br />
+                时间：2026-06-12 03:00<br />
+                赛果录入后本页会自动展示预测比分、实际比分和判定
+              </p>
+              <div className="mt-8 flex items-center justify-center gap-3">
+                <Link href="/matches" className="bg-accent text-white text-base font-bold px-6 py-3 rounded-full hover:bg-accent-hover transition-colors">
+                  查看赛程
+                </Link>
+                <Link href="/admin" className="bg-white text-text-primary text-base font-bold px-6 py-3 rounded-full border border-border-light hover:bg-gray-50 transition-colors">
+                  录入赛果
+                </Link>
+              </div>
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full text-left min-w-[860px]">
+                <thead>
+                  <tr className="text-base text-text-tertiary border-b border-border-light">
+                    <th className="p-4">比赛</th>
+                    <th className="p-4">主推比分</th>
+                    <th className="p-4">实际比分</th>
+                    <th className="p-4">精确比分</th>
+                    <th className="p-4">TOP5</th>
+                    <th className="p-4">胜平负</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {records.map((m) => (
+                    <tr key={m.matchId} className="text-base text-text-primary border-b border-border-light hover:bg-gray-50">
+                      <td className="p-4">
+                        <div className="font-semibold">{m.match}</div>
+                        <div className="text-sm text-text-tertiary mt-1">{m.date} · {m.stage}</div>
+                      </td>
+                      <td className="p-4 font-semibold">{m.predictedScore}</td>
+                      <td className="p-4 font-semibold">{m.actualScore}</td>
+                      <td className="p-4"><Badge ok={m.isExact} /></td>
+                      <td className="p-4"><Badge ok={m.isTop5} /></td>
+                      <td className="p-4"><Badge ok={m.isOutcomeCorrect} /></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+
+        <p className="text-sm text-text-tertiary mt-5 leading-relaxed">
+          当前赛果源：{sourceLabel(source)}。说明：GitHub Pages 为静态网站，默认通过每日自动赛果文件刷新历史战绩；若配置共享 API，则所有访客会优先读取实时共享赛果。
+        </p>
       </section>
     </div>
+  );
+}
+
+function sourceLabel(source: ResultSource) {
+  if (source === 'remote') return '共享 API';
+  if (source === 'static') return '每日自动赛果';
+  return '每日自动赛果';
+}
+
+function Badge({ ok }: { ok: boolean }) {
+  return (
+    <span className={`px-3 py-1 rounded-full text-sm font-bold ${ok ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600'}`}>
+      {ok ? '命中' : '未中'}
+    </span>
   );
 }

@@ -25,7 +25,7 @@ export default function ScoreProbability({ scores, isPro }: Props) {
         return (
           <div key={i} className="relative">
             {isLocked && (
-              <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/70 backdrop-blur-sm rounded-xl">
+              <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/95 backdrop-blur-md rounded-xl">
                 <span className="text-base font-bold text-pro-gold flex items-center gap-1">🔒 Pro 解锁</span>
               </div>
             )}

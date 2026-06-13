@@ -12,7 +12,7 @@ export default function MatchesPage() {
             赛事中心
           </h1>
           <p className="mt-7 text-2xl text-text-secondary max-w-3xl mx-auto leading-snug">
-            浏览所有即将开始的比赛，AI 模型提供精确预测
+            按你提供的赛程表顺序浏览 2026 世界杯小组赛；时间、分组、主客展示顺序已按截图录入
           </p>
         </div>
       </section>

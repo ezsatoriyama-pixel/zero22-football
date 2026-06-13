@@ -1,0 +1,32 @@
+name: Update Match Results
+
+on:
+  schedule:
+    # 10:20 Beijing time every day.
+    - cron: '20 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Update static result feed
+        run: python scripts/update_results.py
+        env:
+          RESULTS_FEED_URL: ${{ secrets.RESULTS_FEED_URL }}
+          RESULTS_FEED_TOKEN: ${{ secrets.RESULTS_FEED_TOKEN }}
+
+      - name: Commit updated results
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update match results'
+          file_pattern: public/data/results.json

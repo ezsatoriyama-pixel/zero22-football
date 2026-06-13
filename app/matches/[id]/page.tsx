@@ -31,48 +31,49 @@ export default function MatchDetailPage({ params }: { params: { id: string } }) 
   };
 
   return (
-    <div className="max-w-page mx-auto px-4 md:px-6 pt-6 md:pt-10 pb-16 md:pb-20">
+    <div className="max-w-page mx-auto px-6 pt-10 pb-20">
       {/* 比赛信息头部 */}
-      <div className="bg-white rounded-card p-5 md:p-8 shadow-card mb-4 md:mb-6">
+      <div className="bg-white rounded-card p-8 shadow-card mb-6">
         <div className="flex items-center justify-center gap-2 mb-4">
-          <span className="text-[10px] md:text-xs text-text-tertiary bg-bg px-2 md:px-3 py-1 rounded-full">
+          <span className="text-xs text-text-tertiary bg-bg px-3 py-1 rounded-full">
             {match.tournament}
           </span>
-          <span className="text-[10px] md:text-xs text-text-tertiary bg-bg px-2 md:px-3 py-1 rounded-full">
+          <span className="text-xs text-text-tertiary bg-bg px-3 py-1 rounded-full">
             {match.stage}
           </span>
         </div>
-        <div className="flex items-center justify-center gap-4 md:gap-12">
+        <div className="flex items-center justify-center gap-12">
           <div className="text-center">
-            <span className="text-3xl md:text-5xl">{match.homeFlag}</span>
-            <h2 className="text-lg md:text-xl font-bold text-text-primary mt-2">{match.homeTeam}</h2>
+            <span className="text-5xl">{match.homeFlag}</span>
+            <h2 className="text-xl font-bold text-text-primary mt-2">{match.homeTeam}</h2>
           </div>
           <div className="text-center">
-            <span className="text-xl md:text-3xl font-bold text-text-tertiary">VS</span>
-            <p className="text-xs md:text-sm text-text-tertiary mt-1">
+            <span className="text-3xl font-bold text-text-tertiary">VS</span>
+            <p className="text-sm text-text-tertiary mt-1">
               {match.date} {match.time}
             </p>
           </div>
           <div className="text-center">
-            <span className="text-3xl md:text-5xl">{match.awayFlag}</span>
-            <h2 className="text-lg md:text-xl font-bold text-text-primary mt-2">{match.awayTeam}</h2>
+            <span className="text-5xl">{match.awayFlag}</span>
+            <h2 className="text-xl font-bold text-text-primary mt-2">{match.awayTeam}</h2>
           </div>
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* 模块1：AI胜率预测 */}
         <section className="bg-white rounded-card p-6 shadow-card">
           <h3 className="text-lg font-bold text-text-primary mb-4">AI 胜率预测</h3>
           <p className="text-xs text-text-tertiary mb-3">
-            基于 Zero22 Net v3 模型 · 10,000 场历史数据训练
+            基于 Zero22 Net v4.1 双模型融合 · 基础命中模型 + 风险修正模型
           </p>
           <WinRateBar home={match.winRate.home} draw={match.winRate.draw} away={match.winRate.away} />
         </section>
 
-        {/* 模块2：推荐比分 TOP3 */}
+        {/* 模块2：推荐比分 TOP5 */}
         <section className="bg-white rounded-card p-6 shadow-card">
-          <h3 className="text-lg font-bold text-text-primary mb-4">推荐比分 TOP3</h3>
+          <h3 className="text-lg font-bold text-text-primary mb-2">推荐比分 TOP5</h3>
+          <p className="text-xs text-text-tertiary mb-4">最高概率比分代表模型最可能区间，不等于确定赛果</p>
           <ScoreProbability scores={match.topScores} isPro={isPro} />
           {!isPro && (
             <button
@@ -291,7 +292,7 @@ export default function MatchDetailPage({ params }: { params: { id: string } }) 
           )}
         </div>
         <p className="text-xs text-text-tertiary mb-4">
-          Zero22 AI Football Lab · Z22-Net v3 · 10,000 场蒙特卡洛模拟 · 完整 500 字战术深度推演
+          Zero22 AI Football Lab · Z22-Net v4.1 双模型融合 · 10,000 场蒙特卡洛模拟 · 基础命中模型 + 风险修正模型 · 完整 500 字战术深度推演
         </p>
         <DeepTacticalReport
           report={match.deepTacticalReport}

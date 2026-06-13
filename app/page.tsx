@@ -6,9 +6,36 @@ import { useAuth } from '@/lib/auth';
 import StrengthBar from '@/components/StrengthBar';
 import ScoreProbability from '@/components/ScoreProbability';
 
+function toLocalDateString(date: Date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+function getDailyMatches() {
+  const today = toLocalDateString(new Date());
+  const todayMatches = worldCupMatches.filter((m) => m.date === today);
+  if (todayMatches.length > 0) {
+    return { title: '今日赛事', subtitle: `${today} 今日自动更新`, matches: todayMatches.slice(0, 4) };
+  }
+
+  const nextDate = worldCupMatches.find((m) => m.date > today)?.date;
+  if (nextDate) {
+    return {
+      title: '下一比赛日',
+      subtitle: `${nextDate} 暂无今日比赛，自动展示下一比赛日`,
+      matches: worldCupMatches.filter((m) => m.date === nextDate).slice(0, 4),
+    };
+  }
+
+  return { title: '近期赛事', subtitle: '赛程已结束，显示最后比赛日', matches: worldCupMatches.slice(-4) };
+}
+
 export default function HomePage() {
   const { isPro } = useAuth();
-  const featuredMatches = worldCupMatches.slice(0, 4);
+  const daily = getDailyMatches();
+  const featuredMatches = daily.matches;
 
   return (
     <div>
@@ -19,7 +46,7 @@ export default function HomePage() {
             Zero22 AI Football Lab
           </h1>
           <p className="mt-7 text-2xl text-text-secondary max-w-3xl mx-auto leading-snug">
-            基于万场历史比赛的深度学习模型，探索足球比赛趋势与精准预测
+            基于万场历史比赛的深度学习模型，探索足球比赛趋势与赛前数据推演
           </p>
           <div className="mt-12 flex items-center justify-center gap-5">
             <Link href="/matches" className="bg-accent text-white text-lg font-bold px-10 py-4 rounded-full hover:bg-accent-hover transition-colors btn-press">
@@ -32,10 +59,10 @@ export default function HomePage() {
           {/* Stats strip */}
           <div className="mt-16 grid grid-cols-4 gap-5 max-w-4xl mx-auto">
             {[
-              { v: statsSummary.totalAnalyzed.toLocaleString(), l: 'AI训练场次' },
-              { v: statsSummary.totalHit.toLocaleString(), l: '累计命中' },
-              { v: statsSummary.totalAccuracy + '%', l: '总命中率' },
-              { v: statsSummary.recent30Accuracy + '%', l: '近30天命中率' },
+              { v: statsSummary.totalAnalyzed.toLocaleString(), l: '模型训练场次' },
+              { v: '待开赛', l: '历史样本状态' },
+              { v: '首战后更新', l: '命中统计' },
+              { v: '已按赛程表录入', l: '赛程数据' },
             ].map((s) => (
               <div key={s.l} className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-3xl font-bold text-text-primary">{s.v}</div>
@@ -49,13 +76,16 @@ export default function HomePage() {
       {/* 今日焦点战 */}
       <section className="max-w-page mx-auto px-6 pb-24">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold text-text-primary">今日焦点战</h2>
+          <div>
+            <h2 className="text-3xl font-bold text-text-primary">{daily.title}</h2>
+            <p className="text-sm text-text-tertiary mt-2">{daily.subtitle}</p>
+          </div>
           <Link href="/matches" className="text-base text-accent hover:text-accent-hover font-bold transition-colors">
             查看全部 →
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {featuredMatches.map((m) => (
             <Link key={m.id} href={`/matches/${m.id}`} className="bg-white rounded-card p-8 shadow-card card-hover block">
               <div className="flex items-center justify-between mb-8">

@@ -1,0 +1,2404 @@
+
+> football-predict@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 4s
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 7.8s (519 modules)
+ GET /admin 404 in 8148ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 67ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 19ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 591ms (511 modules)
+ GET /api/activation/check?phone=13800138000 404 in 633ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/stats 404 in 26ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 84ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 36ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 37ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 40ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /admin 200 in 81ms
+ GET /api/stats 404 in 58ms
+ GET /admin 200 in 47ms
+ GET /api/stats 404 in 40ms
+ GET /admin 200 in 79ms
+ GET /api/stats 404 in 47ms
+ ✓ Compiled in 331ms (267 modules)
+ ○ Compiling /history ...
+ ✓ Compiled /history in 516ms (516 modules)
+ GET /history 200 in 708ms
+ ✓ Compiled /_not-found in 160ms (519 modules)
+ GET /api/activation/check?phone=13800138000 404 in 292ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 23ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 82ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 24ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 67ms
+ GET /api/activation/check?phone=13800138000 404 in 37ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 37ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 76ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 58ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ ✓ Compiled in 271ms (270 modules)
+ ✓ Compiled in 147ms (270 modules)
+ ✓ Compiled in 120ms (270 modules)
+ ✓ Compiled in 181ms (516 modules)
+ ✓ Compiled in 143ms (270 modules)
+ ✓ Compiled in 154ms (270 modules)
+ ✓ Compiled in 121ms (516 modules)
+ ✓ Compiled in 377ms (530 modules)
+ ✓ Compiled /disclaimer in 237ms (520 modules)
+ GET /disclaimer 200 in 366ms
+ ✓ Compiled /_not-found in 304ms (523 modules)
+ GET /api/activation/check?phone=13800138000 404 in 428ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 36ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ ✓ Compiled /pro-terms in 331ms (525 modules)
+ GET /pro-terms 200 in 478ms
+ GET /api/activation/check?phone=13800138000 404 in 73ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 37ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ ○ Compiling / ...
+ ✓ Compiled / in 606ms (549 modules)
+ GET / 200 in 815ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 80ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 80ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 76ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 82ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 37ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 69ms
+ GET /api/activation/check?phone=13800138000 404 in 82ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 74ms
+ GET /api/activation/check?phone=13800138000 404 in 24ms
+ GET /api/activation/check?phone=13800138000 404 in 75ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 39ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ ○ Compiling /matches/[id] ...
+ ✓ Compiled /matches/[id] in 862ms (564 modules)
+ GET /admin 200 in 212ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 539ms (567 modules)
+ GET /api/activation/check?phone=13800138000 404 in 728ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 68ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/stats 404 in 68ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 21ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 39ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 88ms
+ GET /api/activation/check?phone=13800138000 404 in 70ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 58ms
+ GET /api/activation/check?phone=13800138000 404 in 69ms
+ GET /api/activation/check?phone=13800138000 404 in 57ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 76ms
+ GET /api/activation/check?phone=13800138000 404 in 80ms
+ GET /api/activation/check?phone=13800138000 404 in 74ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 83ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 58ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 84ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 43ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 39ms
+ GET /api/activation/check?phone=13800138000 404 in 76ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 74ms
+ GET /api/activation/check?phone=13800138000 404 in 76ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 41ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 88ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 43ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 2.3s (555 modules)
+ GET /api/activation/check?phone=13800138000 404 in 1934ms
+ GET /login 200 in 2902ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 86ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 41ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 68ms
+ GET /api/activation/check?phone=13800138000 404 in 57ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 88ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 36ms
+ GET /api/activation/check?phone=13800138000 404 in 80ms
+ GET /api/activation/check?phone=13800138000 404 in 85ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 67ms
+ GET /api/activation/check?phone=13800138000 404 in 67ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 73ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 36ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 68ms
+ GET /api/activation/check?phone=13800138000 404 in 43ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 70ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 39ms
+ GET /api/activation/check?phone=13800138000 404 in 73ms
+ GET /api/activation/check?phone=13800138000 404 in 38ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 70ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 69ms
+ GET /api/activation/check?phone=13800138000 404 in 68ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 43ms
+ GET /api/activation/check?phone=13800138000 404 in 68ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 67ms
+ GET /api/activation/check?phone=13800138000 404 in 83ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 43ms
+ GET /api/activation/check?phone=13800138000 404 in 68ms
+ GET /api/activation/check?phone=13800138000 404 in 71ms
+ GET /api/activation/check?phone=13800138000 404 in 58ms
+ GET /api/activation/check?phone=13800138000 404 in 42ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 42ms
+ GET /api/activation/check?phone=13800138000 404 in 41ms
+ GET /api/activation/check?phone=13800138000 404 in 38ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 41ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 69ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 38ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 41ms
+ GET /api/activation/check?phone=13800138000 404 in 40ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 82ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 40ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 57ms
+ GET /api/activation/check?phone=13800138000 404 in 38ms
+ GET /api/activation/check?phone=13800138000 404 in 39ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 31ms
+ GET /api/activation/check?phone=13800138000 404 in 40ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 38ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 55ms
+ GET /api/activation/check?phone=13800138000 404 in 24ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 83ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 40ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 28ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 80ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 30ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 59ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 58ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 56ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 31ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 42ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 37ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 69ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 44ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 41ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 82ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 32ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 70ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 80ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 17ms
+ GET /api/activation/check?phone=13800138000 404 in 45ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 76ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 65ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 66ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 54ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 82ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 81ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 52ms
+ GET /api/activation/check?phone=13800138000 404 in 35ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 60ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 46ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 38ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 33ms
+ GET /api/activation/check?phone=13800138000 404 in 51ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 23ms
+ GET /api/activation/check?phone=13800138000 404 in 57ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 77ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 40ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 50ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 61ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 64ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 63ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 53ms
+ GET /api/activation/check?phone=13800138000 404 in 70ms
+ GET /api/activation/check?phone=13800138000 404 in 83ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 34ms
+ GET /api/activation/check?phone=13800138000 404 in 49ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 48ms
+ GET /api/activation/check?phone=13800138000 404 in 62ms
+ GET /api/activation/check?phone=13800138000 404 in 78ms
+ GET /api/activation/check?phone=13800138000 404 in 47ms
+ GET /api/activation/check?phone=13800138000 404 in 79ms
+ GET /api/activation/check?phone=13800138000 404 in 80ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ ./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isPending' is not exported from '@/lib/activationCodes' (imported as 'isPending').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'submitPendingActivation' is not exported from '@/lib/activationCodes' (imported as 'submitPendingActivation').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isPending' is not exported from '@/lib/activationCodes' (imported as 'isPending').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'submitPendingActivation' is not exported from '@/lib/activationCodes' (imported as 'submitPendingActivation').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+ ⚠ ./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isPending' is not exported from '@/lib/activationCodes' (imported as 'isPending').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'submitPendingActivation' is not exported from '@/lib/activationCodes' (imported as 'submitPendingActivation').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isPending' is not exported from '@/lib/activationCodes' (imported as 'isPending').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'submitPendingActivation' is not exported from '@/lib/activationCodes' (imported as 'submitPendingActivation').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+ ⚠ ./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isPending' is not exported from '@/lib/activationCodes' (imported as 'isPending').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'submitPendingActivation' is not exported from '@/lib/activationCodes' (imported as 'submitPendingActivation').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isApproved' is not exported from '@/lib/activationCodes' (imported as 'isApproved').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'isPending' is not exported from '@/lib/activationCodes' (imported as 'isPending').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./components/ProModal.tsx
+Attempted import error: 'submitPendingActivation' is not exported from '@/lib/activationCodes' (imported as 'submitPendingActivation').
+
+Import trace for requested module:
+./components/ProModal.tsx
+./app/matches/[id]/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+ GET /api/activation/check?phone=13800138000 404 in 869ms
+ GET /login 200 in 681ms
+ GET /matches/wc-a1-02 200 in 634ms
+ ⚠ ./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listCodes' is not exported from '@/lib/activationCodes' (imported as 'listCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'listPending' is not exported from '@/lib/activationCodes' (imported as 'listPending').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'getActivated' is not exported from '@/lib/activationCodes' (imported as 'getActivated').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'verifyAdmin' is not exported from '@/lib/activationCodes' (imported as 'verifyAdmin').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'generateCodes' is not exported from '@/lib/activationCodes' (imported as 'generateCodes').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'approveActivation' is not exported from '@/lib/activationCodes' (imported as 'approveActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./app/admin/page.tsx
+Attempted import error: 'rejectActivation' is not exported from '@/lib/activationCodes' (imported as 'rejectActivation').
+
+Import trace for requested module:
+./app/admin/page.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+ ⚠ ./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+ ⚠ ./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+ ⚠ ./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+
+./lib/auth.tsx
+Attempted import error: 'isApprovedByApi' is not exported from './activationCodes' (imported as 'isApprovedByApi').
+
+Import trace for requested module:
+./lib/auth.tsx
+ ✓ Compiled in 383ms (566 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /login 200 in 254ms
+ GET /matches/wc-a1-02 200 in 253ms
+ ⨯ Failed to generate static paths for /matches/[id]:
+Error: Cannot find module './vendor-chunks/next.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\matches\[id]\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\matches\\[id]\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\static-paths-worker.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ]
+}
+ ⨯ Failed to generate static paths for /matches/[id]:
+Error: Cannot find module './vendor-chunks/next.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\matches\[id]\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\matches\\[id]\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\static-paths-worker.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ]
+}
+ ✓ Compiled /_not-found in 362ms (555 modules)
+ GET /_next/static/css/app/layout.css?v=1781123785424 404 in 293ms
+ GET /_next/static/css/app/layout.css?v=1781123785429 404 in 295ms
+ GET /_next/static/chunks/main-app.js?v=1781123785424 404 in 302ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 301ms
+ GET /_next/static/chunks/main-app.js?v=1781123785429 404 in 299ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 248ms
+ ✓ Compiled in 267ms (555 modules)
+ ✓ Compiled in 206ms (286 modules)
+ ✓ Compiled in 208ms (552 modules)
+ GET / 200 in 170ms
+ ✓ Compiled /_not-found in 525ms (555 modules)
+ ⨯ Error: Cannot find module './657.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at __webpack_require__.f.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js:1:8577
+    at Object.<anonymous> (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js:1:8618)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)
+    at Object..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:2090:30)
+    at async pipe.req.req (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:2056:30)
+    at async DevServer.pipeImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:922:25)
+    at async C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:374:24)
+    at async requestHandlerImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './657.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at __webpack_require__.f.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js:1:8577
+    at Object.<anonymous> (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js:1:8618)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)
+    at Object..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:2090:30)
+    at async pipe.req.req (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:2056:30)
+    at async DevServer.pipeImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:922:25)
+    at async C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:374:24)
+    at async requestHandlerImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './657.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\matches\[id]\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\matches\\[id]\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\static-paths-worker.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ],
+  page: '/matches/wc-a1-02.txt'
+}
+ ⨯ Error: Cannot find module './657.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\matches\[id]\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\matches\\[id]\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\static-paths-worker.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ],
+  page: '/matches/wc-a1-02.txt'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.3s (782 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\cache\webpack\client-development-fallback\0.pack.gz'
+ ⨯ Error: Cannot find module './vendor-chunks/react-hot-toast.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\matches\[id]\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\matches\\[id]\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\static-paths-worker.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ],
+  page: '/matches/wc-a2-01.txt'
+}
+ ⨯ Error: Cannot find module './vendor-chunks/react-hot-toast.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\matches\[id]\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\matches\\[id]\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\static-paths-worker.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ],
+  page: '/matches/wc-a2-01.txt'
+}
+ GET /admin 200 in 140ms
+ GET /_next/static/css/app/layout.css?v=1781123975129 404 in 52ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 71ms
+ GET /_next/static/chunks/main-app.js?v=1781123975129 404 in 73ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 72ms
+ GET /_next/static/chunks/app/layout.js 404 in 72ms
+ GET /admin? 200 in 72ms
+ GET /_next/static/css/app/layout.css?v=1781123991088 404 in 37ms
+ GET /_next/static/chunks/main-app.js?v=1781123991088 404 in 73ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 70ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 72ms
+ GET /_next/static/chunks/app/layout.js 404 in 70ms
+ GET /admin? 200 in 40ms
+ GET /_next/static/css/app/layout.css?v=1781123995013 404 in 30ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 78ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 77ms
+ GET /_next/static/chunks/main-app.js?v=1781123995013 404 in 81ms
+ GET /_next/static/chunks/app/layout.js 404 in 78ms
+ GET /admin? 200 in 84ms
+ GET /_next/static/css/app/layout.css?v=1781123995694 404 in 28ms
+ GET /_next/static/chunks/main-app.js?v=1781123995694 404 in 65ms
+ GET /_next/static/chunks/app/layout.js 404 in 56ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 65ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 59ms
+ GET /admin? 200 in 49ms
+ GET /_next/static/css/app/layout.css?v=1781123996023 404 in 40ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 61ms
+ GET /_next/static/chunks/main-app.js?v=1781123996023 404 in 64ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 63ms
+ GET /_next/static/chunks/app/layout.js 404 in 61ms
+ GET /admin? 200 in 43ms
+ GET /_next/static/css/app/layout.css?v=1781123996321 404 in 30ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 53ms
+ GET /_next/static/chunks/main-app.js?v=1781123996321 404 in 56ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 53ms
+ GET /_next/static/chunks/app/layout.js 404 in 53ms
+ ○ Compiling /matches ...
+ ✓ Compiled /matches in 581ms (788 modules)
+ GET /matches 200 in 795ms
+ GET /_next/static/css/app/layout.css?v=1781123998996 404 in 47ms
+ GET /_next/static/chunks/main-app.js?v=1781123998996 404 in 64ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 64ms
+ GET /_next/static/chunks/app/layout.js 404 in 63ms
+ GET / 200 in 68ms
+ GET /_next/static/css/app/layout.css?v=1781123999397 404 in 42ms
+ GET /_next/static/chunks/main-app.js?v=1781123999397 404 in 57ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 57ms
+ GET /_next/static/chunks/app/page.js 404 in 56ms
+ GET /_next/static/chunks/app/layout.js 404 in 55ms
+ GET / 200 in 80ms
+ GET /_next/static/css/app/layout.css?v=1781124000550 404 in 40ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 63ms
+ GET /_next/static/chunks/main-app.js?v=1781124000550 404 in 66ms
+ GET /_next/static/chunks/app/page.js 404 in 63ms
+ GET /_next/static/chunks/app/layout.js 404 in 63ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\vendor-chunks\goober.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/goober' in C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server for build dependencies doesn't lead to expected result 'C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\vendor-chunks\goober.js', but to 'Error: Can't resolve './vendor-chunks/goober' in 'C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/goober (expected C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\vendor-chunks\goober.js)
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\page.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\page.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/react-hot-toast' in C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server for build dependencies doesn't lead to expected result 'C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\vendor-chunks\react-hot-toast.js', but to 'Error: Can't resolve './vendor-chunks/react-hot-toast' in 'C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/react-hot-toast (expected C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\vendor-chunks\react-hot-toast.js)
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\page.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\page.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ GET /admin 200 in 75ms
+ GET /_next/static/css/app/layout.css?v=1781124354875 404 in 79ms
+ GET /_next/static/chunks/main-app.js?v=1781124354875 404 in 115ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 112ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 113ms
+ GET /_next/static/chunks/app/layout.js 404 in 112ms
+ GET /admin? 200 in 76ms
+ GET /_next/static/css/app/layout.css?v=1781124356747 404 in 34ms
+ GET /_next/static/chunks/main-app.js?v=1781124356747 404 in 68ms
+ GET /_next/static/chunks/app/layout.js 404 in 62ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 67ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 66ms
+ GET /admin? 200 in 59ms
+ GET /_next/static/css/app/layout.css?v=1781124370867 404 in 36ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 67ms
+ GET /_next/static/chunks/main-app.js?v=1781124370867 404 in 69ms
+ GET /_next/static/chunks/app/layout.js 404 in 64ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 65ms
+ GET /admin? 200 in 72ms
+ GET /_next/static/css/app/layout.css?v=1781124372790 404 in 28ms
+ GET /_next/static/chunks/main-app.js?v=1781124372790 404 in 68ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 66ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 67ms
+ GET /_next/static/chunks/app/layout.js 404 in 64ms
+ GET /admin? 200 in 65ms
+ GET /_next/static/css/app/layout.css?v=1781124372996 404 in 51ms
+ GET /_next/static/chunks/main-app.js?v=1781124372996 404 in 66ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 66ms
+ GET /_next/static/chunks/app/layout.js 404 in 61ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 63ms
+ GET /admin? 200 in 49ms
+ GET /_next/static/css/app/layout.css?v=1781124373303 404 in 44ms
+ GET /_next/static/chunks/main-app.js?v=1781124373303 404 in 65ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 66ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 65ms
+ GET /_next/static/chunks/app/layout.js 404 in 64ms
+ GET /admin? 200 in 81ms
+ GET /_next/static/css/app/layout.css?v=1781124373494 404 in 31ms
+ GET /_next/static/chunks/main-app.js?v=1781124373494 404 in 56ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 53ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 55ms
+ GET /_next/static/chunks/app/layout.js 404 in 51ms
+ GET /admin? 200 in 57ms
+ GET /_next/static/css/app/layout.css?v=1781124374373 404 in 27ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 50ms
+ GET /_next/static/chunks/main-app.js?v=1781124374373 404 in 53ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 52ms
+ GET /_next/static/chunks/app/layout.js 404 in 53ms
+ GET /admin? 200 in 55ms
+ GET /_next/static/css/app/layout.css?v=1781124374823 404 in 34ms
+ GET /_next/static/chunks/main-app.js?v=1781124374823 404 in 59ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 57ms
+ GET /_next/static/chunks/app/layout.js 404 in 50ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 57ms
+ GET /admin? 200 in 42ms
+ GET /_next/static/css/app/layout.css?v=1781124375020 404 in 40ms
+ GET /_next/static/chunks/main-app.js?v=1781124375020 404 in 56ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 58ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 58ms
+ GET /_next/static/chunks/app/layout.js 404 in 59ms
+ GET /admin? 200 in 63ms
+ GET /_next/static/css/app/layout.css?v=1781124375193 404 in 29ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 59ms
+ GET /_next/static/chunks/main-app.js?v=1781124375193 404 in 63ms
+ GET /_next/static/chunks/app/admin/page.js 404 in 60ms
+ GET /_next/static/chunks/app/layout.js 404 in 58ms
+ GET /login 200 in 61ms
+ GET /_next/static/css/app/layout.css?v=1781124376652 404 in 44ms
+ GET /_next/static/chunks/main-app.js?v=1781124376652 404 in 60ms
+ GET /_next/static/chunks/app/login/page.js 404 in 58ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 59ms
+ GET /_next/static/chunks/app/layout.js 404 in 48ms
+ GET /matches 200 in 60ms
+ GET /_next/static/css/app/layout.css?v=1781124378384 404 in 36ms
+ GET /_next/static/chunks/main-app.js?v=1781124378384 404 in 55ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 55ms
+ GET /_next/static/chunks/app/layout.js 404 in 52ms
+ GET /matches 200 in 78ms
+ GET /_next/static/css/app/layout.css?v=1781124380239 404 in 38ms
+ GET /_next/static/chunks/main-app.js?v=1781124380239 404 in 60ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 59ms
+ GET /_next/static/chunks/app/layout.js 404 in 52ms
+ GET /matches 200 in 70ms
+ GET /_next/static/css/app/layout.css?v=1781124381779 404 in 24ms
+ GET /_next/static/chunks/main-app.js?v=1781124381779 404 in 55ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 55ms
+ GET /_next/static/chunks/app/layout.js 404 in 51ms
+ GET /matches 200 in 64ms
+ GET /_next/static/css/app/layout.css?v=1781124382006 404 in 37ms
+ GET /_next/static/chunks/main-app.js?v=1781124382006 404 in 42ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 42ms
+ GET /_next/static/chunks/app/layout.js 404 in 40ms
+ GET /matches 200 in 65ms
+ GET /_next/static/css/app/layout.css?v=1781124784015 404 in 32ms
+ GET /_next/static/chunks/webpack.js?v=1781124784015 404 in 75ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 74ms
+ GET /_next/static/chunks/main-app.js?v=1781124784015 404 in 69ms
+ GET /_next/static/chunks/app/layout.js 404 in 64ms
+ GET /_next/static/chunks/app/matches/page.js 404 in 64ms
+ GET /matches 200 in 58ms
+ GET /_next/static/css/app/layout.css?v=1781124786049 404 in 56ms
+ GET /_next/static/chunks/webpack.js?v=1781124786049 404 in 60ms
+ GET /_next/static/chunks/main-app.js?v=1781124786049 404 in 57ms
+ GET /_next/static/chunks/app/layout.js 404 in 55ms
+ GET /_next/static/chunks/app/matches/page.js 404 in 55ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 57ms
+ ✓ Compiled in 1068ms (793 modules)
+ ✓ Compiled in 491ms (779 modules)
+ ✓ Compiled in 279ms (779 modules)
+ ✓ Compiled in 401ms (779 modules)
+ ✓ Compiled in 240ms (779 modules)
+ ✓ Compiled in 646ms (793 modules)
+ ✓ Compiled in 309ms (793 modules)
+ ✓ Compiled in 229ms (473 modules)
+ GET /login 200 in 143ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 766ms (796 modules)
+ ⨯ Error: Cannot find module './657.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at __webpack_require__.f.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\login\page.js:1:10538
+    at Object.<anonymous> (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\login\page.js:1:10579)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)
+    at Object..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/login'
+}
+ ✓ Compiled /_error in 459ms (781 modules)
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\pages\_document.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at __webpack_require__.f.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)
+    at Object..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\pages\\_document.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /login 500 in 506ms
+ ✓ Compiled /_not-found in 188ms (784 modules)
+ GET /_next/static/chunks/fallback/webpack.js 404 in 358ms
+ GET /_next/static/chunks/fallback/main.js 404 in 357ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 357ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 349ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 349ms
+ ⨯ Error: Cannot find module './657.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at __webpack_require__.f.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\login\page.js:1:10538
+    at Object.<anonymous> (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\login\page.js:1:10579)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)
+    at Object..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/login'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\app\_not-found\page.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\build\utils.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1500:15)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:55:36
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    at Module._load (node:internal/modules/cjs/loader:1285:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at __webpack_require__.f.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)
+    at Object..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1600:12)
+    at mod.require (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:153:16)
+    at requirePage (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\83668\\.qwenpaw\\workspaces\\default\\football-predict\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /login 500 in 21ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 57ms
+ GET /_next/static/chunks/fallback/main.js 404 in 56ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 55ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 52ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 46ms
+ ✓ Compiled in 890ms (793 modules)
+ ✓ Compiled in 149ms (473 modules)
+ ✓ Compiled in 242ms (473 modules)
+ ✓ Compiled in 439ms (793 modules)
+ ✓ Compiled in 140ms (473 modules)
+ ✓ Compiled in 458ms (793 modules)
+ ✓ Compiled in 131ms (473 modules)
+ ✓ Compiled in 264ms (779 modules)
+ ✓ Compiled in 458ms (793 modules)
+ ✓ Compiled in 325ms (793 modules)
+ ✓ Compiled in 456ms (793 modules)
+ ✓ Compiled in 292ms (793 modules)
+ ✓ Compiled in 311ms (793 modules)
+ ✓ Compiled in 571ms (793 modules)
+ ✓ Compiled in 184ms (473 modules)
+ ✓ Compiled in 858ms (793 modules)
+ ✓ Compiled in 492ms (793 modules)
+ ✓ Compiled in 504ms (779 modules)
+ ✓ Compiled in 586ms (793 modules)
+ ✓ Compiled in 306ms (474 modules)
+ ✓ Compiled in 104ms (474 modules)
+ ✓ Compiled in 618ms (795 modules)
+ ✓ Compiled in 456ms (795 modules)
+ ✓ Compiled in 270ms (795 modules)
+ ✓ Compiled in 327ms (795 modules)
+ ✓ Compiled in 515ms (795 modules)
+ ✓ Compiled in 642ms (795 modules)
+ ⨯ ./app/matches/[id]/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\83668\.qwenpaw\workspaces\default\football-predict\app\matches\[id]\page.tsx[0m:59:1]
+ [2m59[0m |   };
+ [2m60[0m | 
+ [2m61[0m |   return (
+ [2m62[0m |     <div className="max-w-page mx-auto px-6 pt-10 pb-20">
+    : [31;1m     ^^^[0m
+ [2m63[0m |       {/* 比赛信息头部 */}
+ [2m64[0m | 
+ [2m64[0m | function ResultBadge({ label, ok }: { label: string; ok: boolean }) {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/matches/[id]/page.tsx
+ ✓ Compiled in 748ms (781 modules)
+ ✓ Compiled in 782ms (795 modules)
+ ✓ Compiled in 387ms (795 modules)
+ ⨯ ./lib/results.ts
+Error: Failed to read source code from C:\Users\83668\.qwenpaw\workspaces\default\football-predict\lib\results.ts
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./lib/results.ts
+./app/admin/page.tsx
+ ⨯ ./lib/results.ts
+Error: Failed to read source code from C:\Users\83668\.qwenpaw\workspaces\default\football-predict\lib\results.ts
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./lib/results.ts
+./app/admin/page.tsx
+ ✓ Compiled in 495ms (781 modules)
+ ✓ Compiled in 655ms (795 modules)
+ ✓ Compiled in 260ms (474 modules)
+ ✓ Compiled in 552ms (795 modules)
+ ✓ Compiled in 352ms (781 modules)
+ ✓ Compiled in 493ms (795 modules)
+ ✓ Compiled in 283ms (474 modules)
+ ✓ Compiled in 393ms (781 modules)
+ ✓ Compiled in 374ms (795 modules)
+ ✓ Compiled in 152ms (474 modules)
+ ✓ Compiled in 672ms (795 modules)
+ ✓ Compiled in 319ms (474 modules)
+ ○ Compiling /history ...
+ ✓ Compiled /history in 819ms (325 modules)
+ ⨯ Error: Invariant: missing bootstrap script. This is a bug in Next.js
+    at rP (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:2253)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:25567
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\trace\tracer.js:191:62
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\trace\tracer.js:122:103
+    at NoopContextManager.with (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NextTracerImpl.trace (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\trace\tracer.js:122:28)
+    at C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\lib\trace\tracer.js:191:31
+    at ne (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:42:1678)
+    at async doRender (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\83668\.qwenpaw\workspaces\default\football-predict\node_modules\next\dist\server\base-server.js:1588:28) {
+  page: '/history'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 601ms (801 modules)
+ GET /history 500 in 1755ms
+ GET /history 200 in 194ms
+ GET /history 200 in 55ms
+ ✓ Compiled /_not-found in 395ms (790 modules)
+ GET /_next/static/css/app/layout.css?v=1781372503647 404 in 548ms
+ GET /_next/static/chunks/main-app.js?v=1781372503647 404 in 537ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 536ms
+ GET /_next/static/chunks/app/history/page.js 404 in 536ms

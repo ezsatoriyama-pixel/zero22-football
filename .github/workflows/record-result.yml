@@ -1,0 +1,35 @@
+name: Record Match Result
+
+on:
+  workflow_dispatch:
+    inputs:
+      match_id:
+        description: 'Match ID, for example wc-a1-01'
+        required: true
+        type: string
+      score:
+        description: 'Actual score, for example 2:1'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  record-result:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Persist result into repository data
+        run: python scripts/record_result.py --match-id "${{ inputs.match_id }}" --score "${{ inputs.score }}"
+
+      - name: Commit result and trigger deploy
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: record match result ${{ inputs.match_id }}'
+          file_pattern: data/daily-results.json public/data/results.json

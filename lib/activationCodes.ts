@@ -1,190 +1,78 @@
-const ADMIN_PASSWORD = 'zero22admin';
+// 激活码系统 - 预生成 100 个激活码
+// 你把这些激活码给付费用户，每个只能用一次
 
-const CODES_KEY = 'zero22-activation-codes';
-const PENDING_KEY = 'zero22-pending';
-const ACTIVATED_KEY = 'zero22-activated';
+const ALL_CODES: string[] = [
+  'Z22-PRO-001A', 'Z22-PRO-002B', 'Z22-PRO-003C', 'Z22-PRO-004D', 'Z22-PRO-005E',
+  'Z22-PRO-006F', 'Z22-PRO-007G', 'Z22-PRO-008H', 'Z22-PRO-009J', 'Z22-PRO-010K',
+  'Z22-PRO-011L', 'Z22-PRO-012M', 'Z22-PRO-013N', 'Z22-PRO-014P', 'Z22-PRO-015Q',
+  'Z22-PRO-016R', 'Z22-PRO-017S', 'Z22-PRO-018T', 'Z22-PRO-019U', 'Z22-PRO-020V',
+  'Z22-PRO-021W', 'Z22-PRO-022X', 'Z22-PRO-023Y', 'Z22-PRO-024Z', 'Z22-PRO-025A',
+  'Z22-PRO-026B', 'Z22-PRO-027C', 'Z22-PRO-028D', 'Z22-PRO-029E', 'Z22-PRO-030F',
+  'Z22-PRO-031G', 'Z22-PRO-032H', 'Z22-PRO-033J', 'Z22-PRO-034K', 'Z22-PRO-035L',
+  'Z22-PRO-036M', 'Z22-PRO-037N', 'Z22-PRO-038P', 'Z22-PRO-039Q', 'Z22-PRO-040R',
+  'Z22-PRO-041S', 'Z22-PRO-042T', 'Z22-PRO-043U', 'Z22-PRO-044V', 'Z22-PRO-045W',
+  'Z22-PRO-046X', 'Z22-PRO-047Y', 'Z22-PRO-048Z', 'Z22-PRO-049A', 'Z22-PRO-050B',
+  'Z22-PRO-051C', 'Z22-PRO-052D', 'Z22-PRO-053E', 'Z22-PRO-054F', 'Z22-PRO-055G',
+  'Z22-PRO-056H', 'Z22-PRO-057J', 'Z22-PRO-058K', 'Z22-PRO-059L', 'Z22-PRO-060M',
+  'Z22-PRO-061N', 'Z22-PRO-062P', 'Z22-PRO-063Q', 'Z22-PRO-064R', 'Z22-PRO-065S',
+  'Z22-PRO-066T', 'Z22-PRO-067U', 'Z22-PRO-068V', 'Z22-PRO-069W', 'Z22-PRO-070X',
+  'Z22-PRO-071Y', 'Z22-PRO-072Z', 'Z22-PRO-073A', 'Z22-PRO-074B', 'Z22-PRO-075C',
+  'Z22-PRO-076D', 'Z22-PRO-077E', 'Z22-PRO-078F', 'Z22-PRO-079G', 'Z22-PRO-080H',
+  'Z22-PRO-081J', 'Z22-PRO-082K', 'Z22-PRO-083L', 'Z22-PRO-084M', 'Z22-PRO-085N',
+  'Z22-PRO-086P', 'Z22-PRO-087Q', 'Z22-PRO-088R', 'Z22-PRO-089S', 'Z22-PRO-090T',
+  'Z22-PRO-091U', 'Z22-PRO-092V', 'Z22-PRO-093W', 'Z22-PRO-094X', 'Z22-PRO-095Y',
+  'Z22-PRO-096Z', 'Z22-PRO-097A', 'Z22-PRO-098B', 'Z22-PRO-099C', 'Z22-PRO-100D',
+];
 
-export interface ActivationCode {
-  code: string;
-  used: boolean;
-  usedBy?: string;
-  usedAt?: string;
-  createdAt: string;
-}
-
-export interface PendingActivation {
-  id: string;
-  phone: string;
-  maskedPhone: string;
-  createdAt: string;
-}
-
-export interface ActivatedRecord {
-  phone: string;
-  maskedPhone: string;
-  code: string;
-  createdAt: string;
-  approvedAt: string;
-}
-
-// --- Activation Codes ---
-
-function getCodes(): ActivationCode[] {
-  if (typeof window === 'undefined') return [];
-  try { return JSON.parse(localStorage.getItem(CODES_KEY) || '[]'); } catch { return []; }
-}
-function saveCodes(codes: ActivationCode[]) { localStorage.setItem(CODES_KEY, JSON.stringify(codes)); }
-
-function randomCode(): string {
-  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-  let code = 'Z22-';
-  for (let i = 0; i < 4; i++) code += chars[Math.floor(Math.random() * chars.length)];
-  code += '-';
-  for (let i = 0; i < 4; i++) code += chars[Math.floor(Math.random() * chars.length)];
-  return code;
-}
-
-export function generateCodes(count: number): ActivationCode[] {
-  const codes = getCodes();
-  const now = new Date().toISOString();
-  const newCodes: ActivationCode[] = [];
-  for (let i = 0; i < count; i++) {
-    let code = randomCode();
-    while (codes.some((c) => c.code === code)) code = randomCode();
-    const entry: ActivationCode = { code, used: false, createdAt: now };
-    codes.push(entry);
-    newCodes.push(entry);
-  }
-  saveCodes(codes);
-  return newCodes;
-}
-
-export function listCodes(): ActivationCode[] { return getCodes(); }
-
-export function redeemCode(code: string, phone: string): { ok: boolean; message: string } {
-  const codes = getCodes();
-  const entry = codes.find((c) => c.code === code.toUpperCase());
-  if (!entry) return { ok: false, message: '激活码无效' };
-  if (entry.used) return { ok: false, message: '该激活码已被使用' };
-  entry.used = true;
-  entry.usedBy = phone;
-  entry.usedAt = new Date().toISOString();
-  saveCodes(codes);
-  return { ok: true, message: '激活成功！Pro 永久会员已解锁 🎉' };
-}
-
-export function getUnusedCount(): number { return getCodes().filter((c) => !c.used).length; }
-
-// --- Pending Activations ---
-
-function maskPhone(phone: string) { return phone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2'); }
-
-function getPending(): PendingActivation[] {
-  if (typeof window === 'undefined') return [];
-  try { return JSON.parse(localStorage.getItem(PENDING_KEY) || '[]'); } catch { return []; }
-}
-function savePending(list: PendingActivation[]) { localStorage.setItem(PENDING_KEY, JSON.stringify(list)); }
-
-export function getActivated(): ActivatedRecord[] {
-  if (typeof window === 'undefined') return [];
-  try { return JSON.parse(localStorage.getItem(ACTIVATED_KEY) || '[]'); } catch { return []; }
-}
-function saveActivated(list: ActivatedRecord[]) { localStorage.setItem(ACTIVATED_KEY, JSON.stringify(list)); }
-
-export function submitPendingActivation(phone: string): { ok: boolean; message: string } {
-  const pending = getPending();
-  if (pending.some((p) => p.phone === phone && !isApproved(phone))) {
-    return { ok: false, message: '您已有待确认的激活申请，请耐心等待' };
-  }
-  const item: PendingActivation = {
-    id: `P${Date.now()}`,
-    phone,
-    maskedPhone: maskPhone(phone),
-    createdAt: new Date().toISOString(),
-  };
-  pending.push(item);
-  savePending(pending);
-
-  // Also submit to shared queue (API → JSON file) so cron agent can see it
-  fetch('/api/activation/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ phone, maskedPhone: item.maskedPhone }),
-  }).catch(() => {});
-
-  return { ok: true, message: '申请已提交，等待管理员确认收款后即可激活' };
-}
-
-export function listPending(): PendingActivation[] {
-  // Filter out already-approved ones that haven't been cleaned yet
-  return getPending().filter((p) => !getActivated().some((a) => a.phone === p.phone));
-}
-
-export function approveActivation(id: string): { ok: boolean; message: string; phone?: string } {
-  const pending = getPending();
-  const item = pending.find((p) => p.id === id);
-  if (!item) return { ok: false, message: '申请不存在' };
-
-  // Check if already approved
-  const activated = getActivated();
-  if (activated.some((a) => a.phone === item.phone)) {
-    // Remove from pending
-    savePending(pending.filter((p) => p.id !== id));
-    return { ok: false, message: '该用户已激活' };
+// 验证激活码是否有效
+export function validateActivationCode(code: string): { ok: boolean; message: string } {
+  if (!code || typeof code !== 'string') {
+    return { ok: false, message: '请输入激活码' };
   }
 
-  // Generate and redeem a code
-  const codes = generateCodes(1);
-  const code = codes[0].code;
-  redeemCode(code, item.phone);
+  const normalized = code.trim().toUpperCase();
 
-  // Record activation
-  activated.push({
-    phone: item.phone,
-    maskedPhone: item.maskedPhone,
-    code,
-    createdAt: item.createdAt,
-    approvedAt: new Date().toISOString(),
-  });
-  saveActivated(activated);
+  if (!ALL_CODES.includes(normalized)) {
+    return { ok: false, message: '激活码无效，请检查后重试' };
+  }
 
-  // Remove from pending
-  savePending(pending.filter((p) => p.id !== id));
+  // 检查是否已被使用
+  const used = getUsedCodes();
+  if (used.has(normalized)) {
+    return { ok: false, message: '该激活码已被使用' };
+  }
 
-  // Also approve via shared queue API so cron agent knows
-  fetch('/api/activation/approve', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ id }),
-  }).catch(() => {});
-
-  return { ok: true, message: '已确认激活', phone: item.phone };
+  return { ok: true, message: '激活码验证通过' };
 }
 
-export function rejectActivation(id: string): { ok: boolean; message: string } {
-  const pending = getPending();
-  savePending(pending.filter((p) => p.id !== id));
-  return { ok: true, message: '已拒绝' };
+// 标记激活码为已使用
+export function consumeActivationCode(code: string): boolean {
+  const normalized = code.trim().toUpperCase();
+  const used = getUsedCodes();
+  used.add(normalized);
+  saveUsedCodes(used);
+  return true;
 }
 
-export function isApproved(phone: string): boolean {
-  return getActivated().some((a) => a.phone === phone);
-}
-
-export async function isApprovedByApi(phone: string): Promise<boolean> {
+function getUsedCodes(): Set<string> {
+  if (typeof window === 'undefined') return new Set();
   try {
-    const res = await fetch(`/api/activation/check?phone=${encodeURIComponent(phone)}`);
-    const data = await res.json();
-    return data.approved === true;
+    return new Set(JSON.parse(localStorage.getItem('zero22-used-codes') || '[]'));
   } catch {
-    return isApproved(phone); // fallback to localStorage
+    return new Set();
   }
 }
 
-export function isPending(phone: string): boolean {
-  return getPending().some((p) => p.phone === phone);
+function saveUsedCodes(used: Set<string>) {
+  localStorage.setItem('zero22-used-codes', JSON.stringify([...used]));
 }
 
-export function verifyAdmin(password: string): boolean {
-  return password === ADMIN_PASSWORD;
+// 获取未使用的激活码列表（管理后台用）
+export function getAvailableCodes(): string[] {
+  const used = getUsedCodes();
+  return ALL_CODES.filter(c => !used.has(c));
+}
+
+export function getUsedCodesList(): string[] {
+  return [...getUsedCodes()];
 }
