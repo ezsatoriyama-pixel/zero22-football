@@ -19,6 +19,9 @@ export default function MatchDetailPage({ params }: { params: { id: string } }) 
   if (!match) notFound();
 
   const { deepAnalysis } = match;
+  const summaryText = isPro
+    ? match.aiSummary
+    : match.aiSummary.replace(/基础模型主推：.*?风险评级：/u, '基础模型与风险模型已完成赛前推演。当前免费版仅展示方向判断、风险评级与战术摘要。风险评级：');
 
   const handleUnlock = () => {
     if (!isLoggedIn) {
@@ -88,7 +91,7 @@ export default function MatchDetailPage({ params }: { params: { id: string } }) 
         {/* 模块3：AI分析摘要 */}
         <section className="bg-white rounded-card p-6 shadow-card">
           <h3 className="text-lg font-bold text-text-primary mb-4">AI 分析摘要</h3>
-          <p className="text-text-secondary leading-relaxed text-sm">{match.aiSummary}</p>
+          <p className="text-text-secondary leading-relaxed text-sm">{summaryText}</p>
         </section>
 
         {/* 模块4：深度分析（精简版） */}
