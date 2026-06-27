@@ -12,7 +12,7 @@ export default function MatchesPage() {
             赛事中心
           </h1>
           <p className="mt-7 text-2xl text-text-secondary max-w-3xl mx-auto leading-snug">
-            按你提供的赛程表顺序浏览 2026 世界杯小组赛；时间、分组、主客展示顺序已按截图录入
+            按赛程顺序浏览 2026 世界杯完整赛程；小组赛已录入球队，淘汰赛先按晋级席位展示，后续会逐场替换成真实对阵
           </p>
         </div>
       </section>
