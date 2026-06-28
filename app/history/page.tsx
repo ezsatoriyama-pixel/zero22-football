@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { worldCupMatches } from '@/lib/mockData';
-import { CONFIRMED_RESULT_IDS, buildHistoryRecords, loadResultSnapshot, percentage, type HistoryStatRecord, type ResultSource } from '@/lib/results';
+import { buildHistoryRecords, loadResultSnapshot, percentage, type HistoryStatRecord, type ResultSource } from '@/lib/results';
 
 export default function HistoryPage() {
   const [records, setRecords] = useState<HistoryStatRecord[]>([]);
@@ -15,10 +15,7 @@ export default function HistoryPage() {
 
     loadResultSnapshot().then((snapshot) => {
       if (!mounted) return;
-      const confirmedResults = Object.fromEntries(
-        Object.entries(snapshot.results).filter(([matchId]) => CONFIRMED_RESULT_IDS.has(matchId)),
-      );
-      setRecords(buildHistoryRecords(worldCupMatches, confirmedResults));
+      setRecords(buildHistoryRecords(worldCupMatches, snapshot.results));
       setSource(snapshot.source);
       setLoading(false);
     });

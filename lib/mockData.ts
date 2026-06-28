@@ -1,3 +1,4 @@
+import officialSeeds from '@/data/world-cup-2026-seeds.json';
 
 export interface Match {
   id: string;
@@ -381,7 +382,7 @@ function createMatch(seed:Seed):Match{
 // ============ 2026 FIFA\u4e16\u754c\u676f Schedule Model ============
 // 注意：当前为赛程模型数据，不冒充官方最终分组/完整赛程；官方赛程确认后可逐场替换。
 
-const seeds: Seed[] = [
+const legacySeeds: Seed[] = [
   { id:'wc-a1-01', homeTeam:'墨西哥', awayTeam:'南非', homeFlag:'🇲🇽', awayFlag:'🇿🇦', date:'2026-06-12', time:'03:00', tournament:'2026 FIFA世界杯', stage:'小组赛 A组 第1轮', homeStrength:83, awayStrength:67, expectedHomeGoals:1.9, expectedAwayGoals:0.4 },
   { id:'wc-a1-02', homeTeam:'韩国', awayTeam:'捷克', homeFlag:'🇰🇷', awayFlag:'🇨🇿', date:'2026-06-12', time:'10:00', tournament:'2026 FIFA世界杯', stage:'小组赛 A组 第1轮', homeStrength:76, awayStrength:75, expectedHomeGoals:1.2, expectedAwayGoals:1.0 },
   { id:'wc-b1-01', homeTeam:'加拿大', awayTeam:'波黑', homeFlag:'🇨🇦', awayFlag:'🇧🇦', date:'2026-06-13', time:'03:00', tournament:'2026 FIFA世界杯', stage:'小组赛 B组 第1轮', homeStrength:73, awayStrength:71, expectedHomeGoals:1.2, expectedAwayGoals:1.0 },
@@ -493,7 +494,7 @@ const seeds: Seed[] = [
 
 ];
 
-export const worldCupMatches: Match[] = seeds
+export const worldCupMatches: Match[] = (officialSeeds as Seed[])
   .map(createMatch)
   .sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
 

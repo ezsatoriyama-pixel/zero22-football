@@ -1,3 +1,4 @@
+import hardwiredResultsData from '@/data/daily-results.json';
 import type { Match } from './mockData';
 
 export type StoredResult = {
@@ -42,12 +43,7 @@ const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const STATIC_RESULTS_URL = `${BASE_PATH}/data/results.json`;
 
 // Hardwired match results - persisted in code for guaranteed display
-const HARDWIRED_RESULTS: ResultMap = {
-  'wc-a1-01': { matchId: 'wc-a1-01', actualScore: '2:0', updatedAt: '2026-06-13T17:08:51Z' },
-  'wc-a1-02': { matchId: 'wc-a1-02', actualScore: '2:1', updatedAt: '2026-06-14T00:00:00Z' },
-  'wc-b1-01': { matchId: 'wc-b1-01', actualScore: '1:1', updatedAt: '2026-06-14T00:00:00Z' },
-  'wc-d1-01': { matchId: 'wc-d1-01', actualScore: '4:1', updatedAt: '2026-06-14T00:00:00Z' },
-};
+const HARDWIRED_RESULTS: ResultMap = hardwiredResultsData as ResultMap;
 
 export const CONFIRMED_RESULT_IDS = new Set(Object.keys(HARDWIRED_RESULTS));
 
@@ -139,7 +135,13 @@ function normalizeResultPayload(payload: unknown): ResultMap {
 
 function sanitizeResults(results: ResultMap): ResultMap {
   return Object.entries(results).reduce<ResultMap>((map, [matchId, result]) => {
-    if (CONFIRMED_RESULT_IDS.has(matchId)) map[matchId] = result;
+    const normalized = normalizeScore(result?.actualScore);
+    if (!normalized) return map;
+    map[matchId] = {
+      matchId: result.matchId || matchId,
+      actualScore: normalized,
+      updatedAt: result.updatedAt || new Date().toISOString(),
+    };
     return map;
   }, {});
 }
