@@ -379,6 +379,25 @@ function createMatch(seed:Seed):Match{
   };
 }
 
+function localizePlaceholderName(name: string): string {
+  const winnerMatch = name.match(/^Winner of Match (\d+)$/);
+  if (winnerMatch) return `第${winnerMatch[1]}场胜者`;
+
+  const loserMatch = name.match(/^Loser of Match (\d+)$/);
+  if (loserMatch) return `第${loserMatch[1]}场负者`;
+
+  const groupRank = name.match(/^(1st|2nd|4th) of Group ([A-L])$/);
+  if (groupRank) {
+    const rankMap: Record<string, string> = { '1st': '第1', '2nd': '第2', '4th': '第4' };
+    return `${groupRank[2]}组${rankMap[groupRank[1]]}`;
+  }
+
+  const bestThird = name.match(/^Best 3rd \(([A-L]+)\)$/);
+  if (bestThird) return `成绩最好的第三名（${bestThird[1]}组）`;
+
+  return name;
+}
+
 // ============ 2026 FIFA\u4e16\u754c\u676f Schedule Model ============
 // 注意：当前为赛程模型数据，不冒充官方最终分组/完整赛程；官方赛程确认后可逐场替换。
 
@@ -494,7 +513,29 @@ const legacySeeds: Seed[] = [
 
 ];
 
-export const worldCupMatches: Match[] = (officialSeeds as Seed[])
+const localizedOfficialSeeds: Seed[] = (officialSeeds as Seed[]).map((seed) => {
+  const legacy = legacySeeds.find((item) => item.id === seed.id);
+  if (!legacy) {
+    return {
+      ...seed,
+      homeTeam: localizePlaceholderName(seed.homeTeam),
+      awayTeam: localizePlaceholderName(seed.awayTeam),
+      tournament: '2026 FIFA世界杯',
+    };
+  }
+
+  return {
+    ...seed,
+    homeTeam: legacy.homeTeam || localizePlaceholderName(seed.homeTeam),
+    awayTeam: legacy.awayTeam || localizePlaceholderName(seed.awayTeam),
+    homeFlag: legacy.homeFlag,
+    awayFlag: legacy.awayFlag,
+    tournament: legacy.tournament,
+    stage: legacy.stage,
+  };
+});
+
+export const worldCupMatches: Match[] = localizedOfficialSeeds
   .map(createMatch)
   .sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
 
