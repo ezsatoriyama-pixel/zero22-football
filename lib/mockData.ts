@@ -52,6 +52,60 @@ type Seed = {
   isCorrect?: boolean;
 };
 
+const countryNameMap: Record<string, string> = {
+  'Algeria': '\u963f\u5c14\u53ca\u5229\u4e9a',
+  'Argentina': '\u963f\u6839\u5ef7',
+  'Australia': '\u6fb3\u5927\u5229\u4e9a',
+  'Austria': '\u5965\u5730\u5229',
+  'Belgium': '\u6bd4\u5229\u65f6',
+  'Bosnia and Herzegovina': '\u6ce2\u9ed1',
+  'Brazil': '\u5df4\u897f',
+  'Cabo Verde': '\u4f5b\u5f97\u89d2',
+  'Canada': '\u52a0\u62ff\u5927',
+  'Colombia': '\u54e5\u4f26\u6bd4\u4e9a',
+  'Congo DR': '\u521a\u679c(\u91d1)',
+  'Croatia': '\u514b\u7f57\u5730\u4e9a',
+  'Curacao': '\u5e93\u62c9\u7d22',
+  'Cura\u00e7ao': '\u5e93\u62c9\u7d22',
+  'Czechia': '\u6377\u514b',
+  'Ecuador': '\u5384\u74dc\u591a\u5c14',
+  'Egypt': '\u57c3\u53ca',
+  'England': '\u82f1\u683c\u5170',
+  'France': '\u6cd5\u56fd',
+  'Germany': '\u5fb7\u56fd',
+  'Ghana': '\u52a0\u7eb3',
+  'Haiti': '\u6d77\u5730',
+  'Iraq': '\u4f0a\u62c9\u514b',
+  'IR Iran': '\u4f0a\u6717',
+  'Japan': '\u65e5\u672c',
+  'Jordan': '\u7ea6\u65e6',
+  'Korea Republic': '\u97e9\u56fd',
+  'Mexico': '\u58a8\u897f\u54e5',
+  'Morocco': '\u6469\u6d1b\u54e5',
+  'Netherlands': '\u8377\u5170',
+  'New Zealand': '\u65b0\u897f\u5170',
+  'Norway': '\u632a\u5a01',
+  'Panama': '\u5df4\u62ff\u9a6c',
+  'Paraguay': '\u5df4\u62c9\u572d',
+  'Portugal': '\u8461\u8404\u7259',
+  'Qatar': '\u5361\u5854\u5c14',
+  'Saudi Arabia': '\u6c99\u7279\u963f\u62c9\u4f2f',
+  'Scotland': '\u82cf\u683c\u5170',
+  'Senegal': '\u585e\u5185\u52a0\u5c14',
+  'South Africa': '\u5357\u975e',
+  'Spain': '\u897f\u73ed\u7259',
+  'Sweden': '\u745e\u5178',
+  'Switzerland': '\u745e\u58eb',
+  'Tunisia': '\u7a81\u5c3c\u65af',
+  'Turkiye': '\u571f\u8033\u5176',
+  'T\u00fcrkiye': '\u571f\u8033\u5176',
+  'Uruguay': '\u4e4c\u62c9\u572d',
+  'USA': '\u7f8e\u56fd',
+  'Uzbekistan': '\u4e4c\u5179\u522b\u514b\u65af\u5766',
+  'Cote d\'Ivoire': '\u79d1\u7279\u8fea\u74e6',
+  'C\u00f4te d\'Ivoire': '\u79d1\u7279\u8fea\u74e6',
+};
+
 
 function factorial(n: number): number { return n <= 1 ? 1 : n * factorial(n - 1); }
 
@@ -410,6 +464,10 @@ function hasConcreteTeams(seed: Seed): boolean {
   return !isPlaceholderName(seed.homeTeam) && !isPlaceholderName(seed.awayTeam);
 }
 
+function localizeCountryName(name: string): string {
+  return countryNameMap[name] || name;
+}
+
 // ============ 2026 FIFA\u4e16\u754c\u676f Schedule Model ============
 // 注意：当前为赛程模型数据，不冒充官方最终分组/完整赛程；官方赛程确认后可逐场替换。
 
@@ -527,30 +585,37 @@ const legacySeeds: Seed[] = [
 
 const localizedOfficialSeeds: Seed[] = (officialSeeds as Seed[]).map((seed) => {
   const legacy = legacySeeds.find((item) => item.id === seed.id);
+  const homeIsPlaceholder = isPlaceholderName(seed.homeTeam);
+  const awayIsPlaceholder = isPlaceholderName(seed.awayTeam);
+
   if (!legacy) {
     return {
       ...seed,
-      homeTeam: localizePlaceholderName(seed.homeTeam),
-      awayTeam: localizePlaceholderName(seed.awayTeam),
-      tournament: '2026 FIFA世界杯',
+      homeTeam: homeIsPlaceholder
+        ? localizePlaceholderName(seed.homeTeam)
+        : localizeCountryName(seed.homeTeam),
+      awayTeam: awayIsPlaceholder
+        ? localizePlaceholderName(seed.awayTeam)
+        : localizeCountryName(seed.awayTeam),
+      tournament: '2026 FIFA\u4e16\u754c\u676f',
     };
   }
 
-  const localizedHomeTeam = isPlaceholderName(seed.homeTeam)
+  const localizedHomeTeam = homeIsPlaceholder
     ? (legacy.homeTeam || localizePlaceholderName(seed.homeTeam))
-    : seed.homeTeam;
-  const localizedAwayTeam = isPlaceholderName(seed.awayTeam)
+    : localizeCountryName(seed.homeTeam);
+  const localizedAwayTeam = awayIsPlaceholder
     ? (legacy.awayTeam || localizePlaceholderName(seed.awayTeam))
-    : seed.awayTeam;
+    : localizeCountryName(seed.awayTeam);
 
   return {
     ...seed,
     homeTeam: localizedHomeTeam,
     awayTeam: localizedAwayTeam,
-    homeFlag: isPlaceholderName(seed.homeTeam) ? legacy.homeFlag : seed.homeFlag,
-    awayFlag: isPlaceholderName(seed.awayTeam) ? legacy.awayFlag : seed.awayFlag,
-    tournament: legacy.tournament,
-    stage: legacy.stage,
+    homeFlag: homeIsPlaceholder ? (legacy.homeFlag || seed.homeFlag) : seed.homeFlag,
+    awayFlag: awayIsPlaceholder ? (legacy.awayFlag || seed.awayFlag) : seed.awayFlag,
+    tournament: legacy.tournament || '2026 FIFA\u4e16\u754c\u676f',
+    stage: legacy.stage || seed.stage,
   };
 });
 
