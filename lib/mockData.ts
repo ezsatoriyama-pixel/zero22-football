@@ -536,14 +536,17 @@ const localizedOfficialSeeds: Seed[] = (officialSeeds as Seed[]).map((seed) => {
     };
   }
 
+  const localizedHomeTeam = isPlaceholderName(seed.homeTeam)
+    ? (legacy.homeTeam || localizePlaceholderName(seed.homeTeam))
+    : seed.homeTeam;
+  const localizedAwayTeam = isPlaceholderName(seed.awayTeam)
+    ? (legacy.awayTeam || localizePlaceholderName(seed.awayTeam))
+    : seed.awayTeam;
+
   return {
     ...seed,
-    homeTeam: isPlaceholderName(seed.homeTeam)
-      ? (legacy.homeTeam || localizePlaceholderName(seed.homeTeam))
-      : seed.homeTeam,
-    awayTeam: isPlaceholderName(seed.awayTeam)
-      ? (legacy.awayTeam || localizePlaceholderName(seed.awayTeam))
-      : seed.awayTeam,
+    homeTeam: localizedHomeTeam,
+    awayTeam: localizedAwayTeam,
     homeFlag: isPlaceholderName(seed.homeTeam) ? legacy.homeFlag : seed.homeFlag,
     awayFlag: isPlaceholderName(seed.awayTeam) ? legacy.awayFlag : seed.awayFlag,
     tournament: legacy.tournament,
