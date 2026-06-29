@@ -406,6 +406,10 @@ function isPlaceholderName(name: string): boolean {
     || /胜者|负者|席位/.test(name);
 }
 
+function hasConcreteTeams(seed: Seed): boolean {
+  return !isPlaceholderName(seed.homeTeam) && !isPlaceholderName(seed.awayTeam);
+}
+
 // ============ 2026 FIFA\u4e16\u754c\u676f Schedule Model ============
 // 注意：当前为赛程模型数据，不冒充官方最终分组/完整赛程；官方赛程确认后可逐场替换。
 
@@ -548,6 +552,7 @@ const localizedOfficialSeeds: Seed[] = (officialSeeds as Seed[]).map((seed) => {
 });
 
 export const worldCupMatches: Match[] = localizedOfficialSeeds
+  .filter(hasConcreteTeams)
   .map(createMatch)
   .sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
 
