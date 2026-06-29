@@ -398,6 +398,14 @@ function localizePlaceholderName(name: string): string {
   return name;
 }
 
+function isPlaceholderName(name: string): boolean {
+  return /^(Winner|Loser) of Match \d+$/.test(name)
+    || /^(1st|2nd|4th) of Group [A-L]$/.test(name)
+    || /^Best 3rd \([A-L]+\)$/.test(name)
+    || /^\d+强/.test(name)
+    || /胜者|负者|席位/.test(name);
+}
+
 // ============ 2026 FIFA\u4e16\u754c\u676f Schedule Model ============
 // 注意：当前为赛程模型数据，不冒充官方最终分组/完整赛程；官方赛程确认后可逐场替换。
 
@@ -526,10 +534,14 @@ const localizedOfficialSeeds: Seed[] = (officialSeeds as Seed[]).map((seed) => {
 
   return {
     ...seed,
-    homeTeam: legacy.homeTeam || localizePlaceholderName(seed.homeTeam),
-    awayTeam: legacy.awayTeam || localizePlaceholderName(seed.awayTeam),
-    homeFlag: legacy.homeFlag,
-    awayFlag: legacy.awayFlag,
+    homeTeam: isPlaceholderName(seed.homeTeam)
+      ? (legacy.homeTeam || localizePlaceholderName(seed.homeTeam))
+      : seed.homeTeam,
+    awayTeam: isPlaceholderName(seed.awayTeam)
+      ? (legacy.awayTeam || localizePlaceholderName(seed.awayTeam))
+      : seed.awayTeam,
+    homeFlag: isPlaceholderName(seed.homeTeam) ? legacy.homeFlag : seed.homeFlag,
+    awayFlag: isPlaceholderName(seed.awayTeam) ? legacy.awayFlag : seed.awayFlag,
     tournament: legacy.tournament,
     stage: legacy.stage,
   };

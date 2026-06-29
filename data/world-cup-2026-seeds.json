@@ -1164,7 +1164,8 @@
     "homeStrength": 67,
     "awayStrength": 73,
     "expectedHomeGoals": 1.0,
-    "expectedAwayGoals": 1.2
+    "expectedAwayGoals": 1.2,
+    "actualScore": "0:1"
   },
   {
     "id": "wc-r32-02",
@@ -1209,7 +1210,8 @@
     "homeStrength": 94,
     "awayStrength": 80,
     "expectedHomeGoals": 1.6,
-    "expectedAwayGoals": 0.7
+    "expectedAwayGoals": 0.7,
+    "actualScore": "2:1"
   },
   {
     "id": "wc-r32-05",
@@ -1408,33 +1410,33 @@
   },
   {
     "id": "wc-r16-02",
-    "homeTeam": "Winner of Match 73",
+    "homeTeam": "Canada",
     "awayTeam": "Winner of Match 75",
-    "homeFlag": "???",
+    "homeFlag": "????",
     "awayFlag": "???",
     "date": "2026-07-05",
     "time": "01:00",
     "tournament": "2026 FIFA World Cup",
     "stage": "Round of 16 - Match 2",
-    "homeStrength": 84,
+    "homeStrength": 73,
     "awayStrength": 84,
-    "expectedHomeGoals": 1.2,
-    "expectedAwayGoals": 1.0
+    "expectedHomeGoals": 0.9,
+    "expectedAwayGoals": 1.3
   },
   {
     "id": "wc-r16-03",
-    "homeTeam": "Winner of Match 76",
+    "homeTeam": "Brazil",
     "awayTeam": "Winner of Match 78",
-    "homeFlag": "???",
+    "homeFlag": "????",
     "awayFlag": "???",
     "date": "2026-07-06",
     "time": "04:00",
     "tournament": "2026 FIFA World Cup",
     "stage": "Round of 16 - Match 3",
-    "homeStrength": 84,
+    "homeStrength": 94,
     "awayStrength": 84,
-    "expectedHomeGoals": 1.2,
-    "expectedAwayGoals": 1.0
+    "expectedHomeGoals": 1.5,
+    "expectedAwayGoals": 0.8
   },
   {
     "id": "wc-r16-04",
