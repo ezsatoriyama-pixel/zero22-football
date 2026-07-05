@@ -468,6 +468,95 @@ function localizeCountryName(name: string): string {
   return countryNameMap[name] || name;
 }
 
+function parseKnockoutScore(score?: string): [number, number] | null {
+  if (!score) return null;
+  const match = score.trim().match(/^(\d+)\s*:\s*(\d+)$/);
+  if (!match) return null;
+  return [Number(match[1]), Number(match[2])];
+}
+
+function getFifaMatchNumber(id: string): number | null {
+  const r32 = id.match(/^wc-r32-(\d+)$/);
+  if (r32) return 73 + Number(r32[1]);
+
+  const r16 = id.match(/^wc-r16-(\d+)$/);
+  if (r16) return 88 + Number(r16[1]);
+
+  const qf = id.match(/^wc-qf-(\d+)$/);
+  if (qf) return 96 + Number(qf[1]);
+
+  const sf = id.match(/^wc-sf-(\d+)$/);
+  if (sf) return 100 + Number(sf[1]);
+
+  if (id === 'wc-3p-01') return 103;
+  if (id === 'wc-final-01') return 104;
+
+  return null;
+}
+
+const officialSeedList = officialSeeds as Seed[];
+const officialSeedByMatchNumber = new Map<number, Seed>();
+const officialFlagByTeam = new Map<string, string>();
+
+officialSeedList.forEach((seed) => {
+  const matchNumber = getFifaMatchNumber(seed.id);
+  if (matchNumber !== null) {
+    officialSeedByMatchNumber.set(matchNumber, seed);
+  }
+
+  if (!isPlaceholderName(seed.homeTeam) && seed.homeFlag) {
+    officialFlagByTeam.set(seed.homeTeam, seed.homeFlag);
+  }
+  if (!isPlaceholderName(seed.awayTeam) && seed.awayFlag) {
+    officialFlagByTeam.set(seed.awayTeam, seed.awayFlag);
+  }
+});
+
+function resolveKnockoutTeam(name: string, depth = 0): string {
+  if (depth > 8 || !isPlaceholderName(name)) return name;
+
+  const winnerMatch = name.match(/^Winner of Match (\d+)$/);
+  if (winnerMatch) {
+    const source = officialSeedByMatchNumber.get(Number(winnerMatch[1]));
+    const score = parseKnockoutScore(source?.actualScore);
+    if (!source || !score || score[0] === score[1]) return name;
+
+    const homeTeam = resolveKnockoutTeam(source.homeTeam, depth + 1);
+    const awayTeam = resolveKnockoutTeam(source.awayTeam, depth + 1);
+    return score[0] > score[1] ? homeTeam : awayTeam;
+  }
+
+  const loserMatch = name.match(/^Loser of Match (\d+)$/);
+  if (loserMatch) {
+    const source = officialSeedByMatchNumber.get(Number(loserMatch[1]));
+    const score = parseKnockoutScore(source?.actualScore);
+    if (!source || !score || score[0] === score[1]) return name;
+
+    const homeTeam = resolveKnockoutTeam(source.homeTeam, depth + 1);
+    const awayTeam = resolveKnockoutTeam(source.awayTeam, depth + 1);
+    return score[0] > score[1] ? awayTeam : homeTeam;
+  }
+
+  return name;
+}
+
+function resolveOfficialFlag(teamName: string, fallbackFlag: string): string {
+  return officialFlagByTeam.get(teamName) || fallbackFlag;
+}
+
+const resolvedOfficialSeeds: Seed[] = officialSeedList.map((seed) => {
+  const homeTeam = resolveKnockoutTeam(seed.homeTeam);
+  const awayTeam = resolveKnockoutTeam(seed.awayTeam);
+
+  return {
+    ...seed,
+    homeTeam,
+    awayTeam,
+    homeFlag: resolveOfficialFlag(homeTeam, seed.homeFlag),
+    awayFlag: resolveOfficialFlag(awayTeam, seed.awayFlag),
+  };
+});
+
 // ============ 2026 FIFA\u4e16\u754c\u676f Schedule Model ============
 // 注意：当前为赛程模型数据，不冒充官方最终分组/完整赛程；官方赛程确认后可逐场替换。
 
@@ -583,7 +672,7 @@ const legacySeeds: Seed[] = [
 
 ];
 
-const localizedOfficialSeeds: Seed[] = (officialSeeds as Seed[]).map((seed) => {
+const localizedOfficialSeeds: Seed[] = resolvedOfficialSeeds.map((seed) => {
   const legacy = legacySeeds.find((item) => item.id === seed.id);
   const homeIsPlaceholder = isPlaceholderName(seed.homeTeam);
   const awayIsPlaceholder = isPlaceholderName(seed.awayTeam);
