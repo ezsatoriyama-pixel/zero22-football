@@ -1,7 +1,7 @@
-import { worldCupMatches } from '@/lib/mockData';
+import { allWorldCupMatches } from '@/lib/mockData';
 
 export function generateStaticParams() {
-  return worldCupMatches.map((m) => ({ id: m.id }));
+  return allWorldCupMatches.map((m) => ({ id: m.id }));
 }
 
 export default function MatchDetailLayout({ children }: { children: React.ReactNode }) {

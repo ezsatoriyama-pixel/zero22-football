@@ -708,10 +708,12 @@ const localizedOfficialSeeds: Seed[] = resolvedOfficialSeeds.map((seed) => {
   };
 });
 
-export const worldCupMatches: Match[] = localizedOfficialSeeds
-  .filter(hasConcreteTeams)
+export const allWorldCupMatches: Match[] = localizedOfficialSeeds
   .map(createMatch)
   .sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
+
+export const worldCupMatches: Match[] = allWorldCupMatches
+  .filter((match) => !isPlaceholderName(match.homeTeam) && !isPlaceholderName(match.awayTeam));
 
 // Generate realistic past 30 days history (only matches that already happened)
 function generatePastHistory() {

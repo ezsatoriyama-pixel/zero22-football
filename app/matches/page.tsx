@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { worldCupMatches } from '@/lib/mockData';
+import { allWorldCupMatches } from '@/lib/mockData';
 
 export default function MatchesPage() {
   return (
@@ -19,7 +19,7 @@ export default function MatchesPage() {
 
       <section className="max-w-page mx-auto px-6 pb-24">
         <div className="grid grid-cols-2 gap-6">
-          {worldCupMatches.map((m) => (
+          {allWorldCupMatches.map((m) => (
             <Link key={m.id} href={`/matches/${m.id}`} className="bg-white rounded-card p-8 shadow-card card-hover block">
               <div className="flex items-center justify-between mb-8">
                 <span className="text-base text-text-tertiary bg-bg px-4 py-2 rounded-full">

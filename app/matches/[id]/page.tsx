@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { notFound } from 'next/navigation';
-import { worldCupMatches } from '@/lib/mockData';
+import { allWorldCupMatches } from '@/lib/mockData';
 import { useAuth } from '@/lib/auth';
 import WinRateBar from '@/components/WinRateBar';
 import ScoreProbability from '@/components/ScoreProbability';
@@ -15,7 +15,7 @@ export default function MatchDetailPage({ params }: { params: { id: string } }) 
   const { isPro, isLoggedIn } = useAuth();
   const [showProModal, setShowProModal] = useState(false);
 
-  const match = worldCupMatches.find((m) => m.id === params.id);
+  const match = allWorldCupMatches.find((m) => m.id === params.id);
   if (!match) notFound();
 
   const { deepAnalysis } = match;
