@@ -468,6 +468,10 @@ function localizeCountryName(name: string): string {
   return countryNameMap[name] || name;
 }
 
+function uniqueStrings(values: string[]): string[] {
+  return values.filter((value, index) => values.indexOf(value) === index);
+}
+
 function parseKnockoutScore(score?: string): [number, number] | null {
   if (!score) return null;
   const match = score.trim().match(/^(\d+)\s*:\s*(\d+)$/);
@@ -542,6 +546,50 @@ function resolveKnockoutTeam(name: string, depth = 0): string {
 
 function resolveOfficialFlag(teamName: string, fallbackFlag: string): string {
   return officialFlagByTeam.get(teamName) || fallbackFlag;
+}
+
+function resolvePossibleTeamNames(name: string, depth = 0): string[] {
+  if (depth > 8) return [localizeCountryName(name)];
+  if (!isPlaceholderName(name)) return [localizeCountryName(name)];
+
+  const winnerMatch = name.match(/^Winner of Match (\d+)$/);
+  if (winnerMatch) {
+    const source = officialSeedByMatchNumber.get(Number(winnerMatch[1]));
+    if (!source) return [localizePlaceholderName(name)];
+
+    const score = parseKnockoutScore(source.actualScore);
+    const homeOptions = resolvePossibleTeamNames(source.homeTeam, depth + 1);
+    const awayOptions = resolvePossibleTeamNames(source.awayTeam, depth + 1);
+
+    if (score && score[0] !== score[1]) {
+      return score[0] > score[1] ? homeOptions : awayOptions;
+    }
+
+    return uniqueStrings([...homeOptions, ...awayOptions]);
+  }
+
+  const loserMatch = name.match(/^Loser of Match (\d+)$/);
+  if (loserMatch) {
+    const source = officialSeedByMatchNumber.get(Number(loserMatch[1]));
+    if (!source) return [localizePlaceholderName(name)];
+
+    const score = parseKnockoutScore(source.actualScore);
+    const homeOptions = resolvePossibleTeamNames(source.homeTeam, depth + 1);
+    const awayOptions = resolvePossibleTeamNames(source.awayTeam, depth + 1);
+
+    if (score && score[0] !== score[1]) {
+      return score[0] > score[1] ? awayOptions : homeOptions;
+    }
+
+    return uniqueStrings([...homeOptions, ...awayOptions]);
+  }
+
+  return [localizePlaceholderName(name)];
+}
+
+function localizePlaceholderTeams(name: string, fallback: string): string {
+  const options = uniqueStrings(resolvePossibleTeamNames(name));
+  return options.length > 0 ? options.join('/') : fallback;
 }
 
 const resolvedOfficialSeeds: Seed[] = officialSeedList.map((seed) => {
@@ -691,10 +739,10 @@ const localizedOfficialSeeds: Seed[] = resolvedOfficialSeeds.map((seed) => {
   }
 
   const localizedHomeTeam = homeIsPlaceholder
-    ? (legacy.homeTeam || localizePlaceholderName(seed.homeTeam))
+    ? localizePlaceholderTeams(seed.homeTeam, legacy.homeTeam || localizePlaceholderName(seed.homeTeam))
     : localizeCountryName(seed.homeTeam);
   const localizedAwayTeam = awayIsPlaceholder
-    ? (legacy.awayTeam || localizePlaceholderName(seed.awayTeam))
+    ? localizePlaceholderTeams(seed.awayTeam, legacy.awayTeam || localizePlaceholderName(seed.awayTeam))
     : localizeCountryName(seed.awayTeam);
 
   return {
