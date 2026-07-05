@@ -1,8 +1,8 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { worldCupMatches } from '@/lib/mockData';
+import { worldCupMatches } from '@/lib/worldCupSchedule';
 import { buildHistoryRecords, loadResultSnapshot, percentage, type HistoryStatRecord, type ResultSource } from '@/lib/results';
 
 export default function HistoryPage() {
@@ -20,7 +20,9 @@ export default function HistoryPage() {
       setLoading(false);
     });
 
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   const total = records.length;
@@ -36,7 +38,7 @@ export default function HistoryPage() {
             历史战绩
           </h1>
           <p className="mt-7 text-2xl text-text-secondary max-w-3xl mx-auto leading-snug">
-            只记录已完赛并录入真实比分的比赛，自动统计主推、TOP5 与胜平负方向
+            这里只统计已经结束且已录入真实比分的比赛，不再提前显示假赛果或错误命中状态。
           </p>
         </div>
       </section>
@@ -69,17 +71,9 @@ export default function HistoryPage() {
             </div>
           ) : records.length === 0 ? (
             <div className="text-center py-16">
-              <div className="text-6xl mb-6">⚽</div>
-              <h3 className="text-2xl font-bold text-text-primary mb-3">
-                暂无已确认历史战绩
-              </h3>
+              <h3 className="text-2xl font-bold text-text-primary mb-3">暂无已确认历史战绩</h3>
               <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
-                这里不会再显示假的“中 / 不中”。进入管理后台录入实际比分后，本页会自动计算命中率。
-              </p>
-              <p className="text-base text-text-tertiary mt-4">
-                首场比赛：墨西哥 vs 南非<br />
-                时间：2026-06-12 03:00<br />
-                赛果录入后本页会自动展示预测比分、实际比分和判定
+                录入真实比分后，这里会自动计算主推比分、TOP5 和胜平负方向命中率。
               </p>
               <div className="mt-8 flex items-center justify-center gap-3">
                 <Link href="/matches" className="bg-accent text-white text-base font-bold px-6 py-3 rounded-full hover:bg-accent-hover transition-colors">
@@ -98,7 +92,7 @@ export default function HistoryPage() {
                     <th className="p-4">比赛</th>
                     <th className="p-4">主推比分</th>
                     <th className="p-4">实际比分</th>
-                    <th className="p-4">精确比分</th>
+                    <th className="p-4">精确命中</th>
                     <th className="p-4">TOP5</th>
                     <th className="p-4">胜平负</th>
                   </tr>
@@ -124,7 +118,7 @@ export default function HistoryPage() {
         </div>
 
         <p className="text-sm text-text-tertiary mt-5 leading-relaxed">
-          当前赛果源：{sourceLabel(source)}。说明：GitHub Pages 为静态网站，默认通过每日自动赛果文件刷新历史战绩；若配置共享 API，则所有访客会优先读取实时共享赛果。
+          当前赛果来源：{sourceLabel(source)}。静态部署下默认读取固化赛果文件；如果后续接入共享 API，则优先读取共享结果。
         </p>
       </section>
     </div>
@@ -133,7 +127,6 @@ export default function HistoryPage() {
 
 function sourceLabel(source: ResultSource) {
   if (source === 'remote') return '共享 API';
-  if (source === 'static') return '每日自动赛果';
   return '每日自动赛果';
 }
 

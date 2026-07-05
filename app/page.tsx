@@ -1,7 +1,7 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
-import { worldCupMatches, statsSummary } from '@/lib/mockData';
+import { worldCupMatches, statsSummary } from '@/lib/worldCupSchedule';
 import { useAuth } from '@/lib/auth';
 import StrengthBar from '@/components/StrengthBar';
 import ScoreProbability from '@/components/ScoreProbability';
@@ -17,7 +17,7 @@ function getDailyMatches() {
   const today = toLocalDateString(new Date());
   const todayMatches = worldCupMatches.filter((m) => m.date === today);
   if (todayMatches.length > 0) {
-    return { title: '今日赛事', subtitle: `${today} 今日自动更新`, matches: todayMatches.slice(0, 4) };
+    return { title: '今日赛事', subtitle: `${today} 自动更新`, matches: todayMatches.slice(0, 4) };
   }
 
   const nextDate = worldCupMatches.find((m) => m.date > today)?.date;
@@ -39,14 +39,13 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero */}
       <section className="text-center pt-28 pb-24 px-6">
         <div className="max-w-page mx-auto">
           <h1 className="text-[76px] font-bold text-text-primary tracking-tight leading-[0.95]">
             Zero22 AI Football Lab
           </h1>
           <p className="mt-7 text-2xl text-text-secondary max-w-3xl mx-auto leading-snug">
-            基于万场历史比赛的深度学习模型，探索足球比赛趋势与赛前数据推演
+            基于历史比赛建模与赛前推演，持续跟踪 2026 世界杯赛程、比分概率和赛后命中统计。
           </p>
           <div className="mt-12 flex items-center justify-center gap-5">
             <Link href="/matches" className="bg-accent text-white text-lg font-bold px-10 py-4 rounded-full hover:bg-accent-hover transition-colors btn-press">
@@ -56,13 +55,12 @@ export default function HomePage() {
               历史战绩
             </Link>
           </div>
-          {/* Stats strip */}
           <div className="mt-16 grid grid-cols-4 gap-5 max-w-4xl mx-auto">
             {[
               { v: statsSummary.totalAnalyzed.toLocaleString(), l: '模型训练场次' },
-              { v: '待开赛', l: '历史样本状态' },
-              { v: '首战后更新', l: '命中统计' },
-              { v: '已按赛程表录入', l: '赛程数据' },
+              { v: '真实赛果驱动', l: '赛程解锁方式' },
+              { v: '赛后自动统计', l: '历史命中闭环' },
+              { v: `${worldCupMatches.length}`, l: '当前可见赛程' },
             ].map((s) => (
               <div key={s.l} className="bg-white rounded-2xl p-6 shadow-card">
                 <div className="text-3xl font-bold text-text-primary">{s.v}</div>
@@ -73,7 +71,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 今日焦点战 */}
       <section className="max-w-page mx-auto px-6 pb-24">
         <div className="flex items-center justify-between mb-8">
           <div>
@@ -81,7 +78,7 @@ export default function HomePage() {
             <p className="text-sm text-text-tertiary mt-2">{daily.subtitle}</p>
           </div>
           <Link href="/matches" className="text-base text-accent hover:text-accent-hover font-bold transition-colors">
-            查看全部 →
+            查看全部
           </Link>
         </div>
 
@@ -120,3 +117,4 @@ export default function HomePage() {
     </div>
   );
 }
+

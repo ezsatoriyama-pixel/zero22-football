@@ -1,4 +1,4 @@
-import { allWorldCupMatches } from '@/lib/mockData';
+﻿import { allWorldCupMatches } from '@/lib/worldCupSchedule';
 
 export function generateStaticParams() {
   return allWorldCupMatches.map((m) => ({ id: m.id }));
@@ -7,3 +7,4 @@ export function generateStaticParams() {
 export default function MatchDetailLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
+

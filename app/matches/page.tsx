@@ -1,7 +1,7 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
-import { allWorldCupMatches } from '@/lib/mockData';
+import { allWorldCupMatches } from '@/lib/worldCupSchedule';
 
 export default function MatchesPage() {
   return (
@@ -9,10 +9,10 @@ export default function MatchesPage() {
       <section className="text-center pt-28 pb-24 px-6">
         <div className="max-w-page mx-auto">
           <h1 className="text-[76px] font-bold text-text-primary tracking-tight leading-[0.95]">
-            赛事中心
+            璧涗簨涓績
           </h1>
           <p className="mt-7 text-2xl text-text-secondary max-w-3xl mx-auto leading-snug">
-            按赛程顺序浏览 2026 世界杯完整赛程；小组赛已录入球队，淘汰赛先按晋级席位展示，后续会逐场替换成真实对阵
+            鎸夎禌绋嬮『搴忔祻瑙?2026 涓栫晫鏉畬鏁磋禌绋嬶紱灏忕粍璧涘凡褰曞叆鐞冮槦锛屾窐姹拌禌鍏堟寜鏅嬬骇甯綅灞曠ず锛屽悗缁細閫愬満鏇挎崲鎴愮湡瀹炲闃?
           </p>
         </div>
       </section>
@@ -23,7 +23,7 @@ export default function MatchesPage() {
             <Link key={m.id} href={`/matches/${m.id}`} className="bg-white rounded-card p-8 shadow-card card-hover block">
               <div className="flex items-center justify-between mb-8">
                 <span className="text-base text-text-tertiary bg-bg px-4 py-2 rounded-full">
-                  {m.tournament} · {m.stage}
+                  {m.tournament} 路 {m.stage}
                 </span>
                 <span className="text-base text-text-tertiary">{m.date} {m.time}</span>
               </div>
@@ -44,3 +44,4 @@ export default function MatchesPage() {
     </div>
   );
 }
+
